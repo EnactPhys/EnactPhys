@@ -59,7 +59,7 @@ Remove `--dry-run` to generate videos. Use `--task-id` for one task or `--shard-
 | PhysDelta-Real parameter control: generation → tracking → score | [Single-command workflow](docs/video_evaluation.md#single-command-real-pc-workflow) |
 | Physics-IQ Solid Mechanics: generation → video metrics → score | [Single-command workflow](docs/physicsiq_video_reproduction.md) |
 | Video Quality and Physical Plausibility | [Video evaluators](docs/video_evaluation.md) |
-| MORPHEUS screening and score aggregation | [Screening protocol](docs/morpheus_screening.md) |
+| MORPHEUS tracking, video scoring and screening | [Video scoring](docs/morpheus_video_scoring.md) · [Screening protocol](docs/morpheus_screening.md) |
 | Main table, ablations and object-state measurements | [Recorded measurement aggregation](docs/reproduction.md#recorded-measurements) |
 
 To aggregate the released measurements:
