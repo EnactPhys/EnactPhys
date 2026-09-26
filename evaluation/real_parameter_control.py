@@ -19,4 +19,3 @@ def response(path: Path, scene: str, object_index: int) -> float | None:
     if scene in {"S01", "S03", "S04", "S06", "S08", "S10"}:
         return max(abs(x - x0) for x, _ in points)
     return max(math.hypot(x - x0, y - y0) for x, y in points)
-

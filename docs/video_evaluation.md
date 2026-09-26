@@ -97,3 +97,14 @@ python scripts/evaluate_physdelta_real_pc.py --dataset data/PhysDelta \
 Omit `--seed` to process all three seeds. Tracking may be split using `--shard-index` and `--shard-count`; use the same output directory and distinct shard indices. The runner accepts 49-frame, 768 × 448 videos. Other model outputs require their documented preprocessing before this entry point.
 
 Tracking preserves the observed initial mask for frame-zero measurement and propagates SAM2 masks for subsequent frames. The scorer uses the published 708 matched task pairs, fixed scene-specific displacement responses and strict signed change greater than 0.5 pixels. Missing readouts count as failures in the fixed denominator. It writes every pair and a per-seed summary. These entries preserve the recovered readout and tracking implementation; fresh GPU validation of this packaged workflow is pending.
+
+### Single-command Real PC workflow
+
+```bash
+python scripts/reproduce_physdelta_real_pc.py --dataset data/PhysDelta \
+  --base-model weights/Wan2.2-TI2V-5B --checkpoint weights/enactphys \
+  --sam2-checkpoint weights/sam2_hiera_large.pt \
+  --output-dir outputs/real_pc_run --seed 3407 --dry-run
+```
+
+Remove `--dry-run` to execute all three stages on a compatible GPU; omit `--seed` for all 708 comparisons. The dry run validates benchmark input references and prints stage commands without allocating a GPU. A normal run requires a new output directory and checks model files before starting. Resume interrupted stages through their individual commands. This entry point covers Real Parameter Control, not the entire paper table. End-to-end GPU validation of the packaged workflow remains pending.
