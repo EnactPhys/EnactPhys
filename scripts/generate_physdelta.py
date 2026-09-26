@@ -9,7 +9,8 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 TRACKS = ["sim/parameter_control", "sim/invariance", "sim/object_control",
-          "real/parameter_control", "real/object_control", "real/friction_diagnostic"]
+          "real/parameter_control", "real/object_control", "real/friction_diagnostic",
+          "real/quality", "sim/plausibility", "sim/video_quality"]
 
 
 def main():

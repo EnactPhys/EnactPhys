@@ -4,8 +4,8 @@
 | --- | --- | --- |
 | Code | GitHub: EnactPhys/EnactPhys | Implementation, configurations, inference, training and evaluation entry points |
 | Project page | https://enactphys.github.io/ | Selected videos and method description |
-| Model | Hugging Face Model: EnactPhys/EnactPhys (planned) | Checkpoints, architecture variants and loading metadata |
-| Dataset | Hugging Face Dataset: EnactPhys/PhysDelta (planned) | Benchmark inputs, physical conditions, masks, references and splits |
+| Model | [EnactPhys checkpoints](https://huggingface.co/EnactPhys/EnactPhys) | Checkpoints, architecture variants and loading metadata |
+| Dataset | [PhysDelta inputs](https://huggingface.co/datasets/EnactPhys/PhysDelta) | Benchmark inputs, physical conditions, masks, references and splits |
 
 The model and dataset repositories share the EnactPhys account. A Hugging Face
 collection can group them on one page. Reproduction instructions and executable

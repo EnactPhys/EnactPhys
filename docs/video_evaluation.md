@@ -81,3 +81,19 @@ Portable pixel-to-trajectory entry points for all PC/OC variants and complete
 pixel-level Physics-IQ/MORPHEUS execution remain to be integrated. These are not
 provided by the recorded-table commands. Base models, evaluation models,
 checkpoints and benchmark inputs must be obtained separately before GPU runs.
+
+## PhysDelta-Real parameter control
+
+After generating videos with `scripts/generate_physdelta.py`, extract their trajectories with the published initial tracking masks. The bundled SAM2 implementation accepts in-memory image sequences. Obtain the SAM2 Hiera Large checkpoint from its original distributor and install `requirements-tracking.txt` in the runtime environment.
+
+```bash
+python scripts/track_physdelta_real.py --dataset data/PhysDelta \
+  --videos outputs/physdelta_real/videos --seed 3407 \
+  --sam2-checkpoint weights/sam2_hiera_large.pt --output-dir outputs/real_tracking
+python scripts/evaluate_physdelta_real_pc.py --dataset data/PhysDelta \
+  --tracking-dir outputs/real_tracking --seed 3407 --output-dir outputs/real_pc
+```
+
+Omit `--seed` to process all three seeds. Tracking may be split using `--shard-index` and `--shard-count`; use the same output directory and distinct shard indices. The runner accepts 49-frame, 768 × 448 videos. Other model outputs require their documented preprocessing before this entry point.
+
+Tracking preserves the observed initial mask for frame-zero measurement and propagates SAM2 masks for subsequent frames. The scorer uses the published 708 matched task pairs, fixed scene-specific displacement responses and strict signed change greater than 0.5 pixels. Missing readouts count as failures in the fixed denominator. It writes every pair and a per-seed summary. These entries preserve the recovered readout and tracking implementation; fresh GPU validation of this packaged workflow is pending.

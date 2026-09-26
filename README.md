@@ -11,7 +11,7 @@
 
 EnactPhys controls generated object motion through evolving object states and parameter-conditioned interactions. Given an initial frame, object masks and physical parameters, it updates object states and writes their information into video diffusion. PhysDelta evaluates the response of target and non-target objects to physical interventions.
 
-> Initial code release. Recorded-measurement aggregation is available for the main and ablation tables. Eight checkpoints and complete PhysDelta benchmark inputs are available; full video-to-table execution of this release package has not yet been validated.
+> Initial code release. Recorded-measurement aggregation is available for the main and ablation tables. Eight checkpoints and PhysDelta control and quality-evaluation inputs are available; full video-to-table execution of this release package has not yet been validated.
 
 ## Method
 
@@ -29,7 +29,7 @@ The [project page](https://enactphys.github.io/) presents selected examples of g
 | [Project page](https://enactphys.github.io/) | Selected videos and state visualizations | Available |
 | [GitHub code](https://github.com/EnactPhys/EnactPhys) | Implementation, configurations and reproduction commands | Available |
 | [Hugging Face model](https://huggingface.co/EnactPhys/EnactPhys) | Eight checkpoints and loading configuration | Available |
-| [Hugging Face dataset](https://huggingface.co/datasets/EnactPhys/PhysDelta) | 3,519 benchmark tasks, initial images, conditions and tracking masks | Available |
+| [Hugging Face dataset](https://huggingface.co/datasets/EnactPhys/PhysDelta) | 3,612 evaluation task inputs, plus six separate diagnostics | Available |
 
 See [resource organization](docs/resources.md) for training data and optional evaluation-output archives. Third-party base models are obtained from their original distributors.
 

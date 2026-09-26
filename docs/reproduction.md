@@ -16,7 +16,8 @@ EnactPhys Physics-IQ aggregates to 48.15780133372367, displayed as 48.16.
 | Aggregate object-state measurements | `scripts/reproduce.py --task mechanisms-recorded` | Included measurements | Archived state analyses |
 | Generate Physics-IQ videos | `scripts/generate.py` | Base model, adapter where enabled, input images and conditions | Fixed adapter/base task manifests; GPU execution of this package pending validation |
 | Score VQA and PP from videos | `scripts/evaluate_vqa.py`, `scripts/evaluate_pp.py` | Videos, evaluator models, PP trajectories and API access | Entry points prepared; GPU/API validation pending |
-| Other pixel metrics | Benchmark-specific evaluator | Videos, references and evaluator dependencies | Portable PC/OC tracking and Physics-IQ/MORPHEUS execution pending |
+| Real parameter-control tracking and score | `scripts/track_physdelta_real.py`, `scripts/evaluate_physdelta_real_pc.py` | Generated videos, published masks and task pairs, SAM2 checkpoint | Packaged; fresh GPU validation pending |
+| Other pixel metrics | Benchmark-specific evaluator | Videos, references and evaluator dependencies | Portable Sim PC/OC and Physics-IQ/MORPHEUS execution pending |
 
 ## Recorded measurements
 
@@ -94,9 +95,9 @@ Pixel-scoring commands for VQA and PP are described in the
 
 ## PhysDelta generation
 
-The [dataset release](https://huggingface.co/datasets/EnactPhys/PhysDelta) includes all 3,519 formal benchmark task inputs, plus six separately listed friction diagnostics. Extract both input archives under one dataset root. `scripts/generate_physdelta.py` validates task IDs and all selected image, condition and tracking-mask paths before generation.
+The [dataset release](https://huggingface.co/datasets/EnactPhys/PhysDelta) includes the 3,594 control and Real-quality tasks, 18 additional Sim-quality task inputs, and six separately listed friction diagnostics. Extract both input archives under one dataset root. `scripts/generate_physdelta.py` validates task IDs and all selected image, condition and tracking-mask paths before generation.
 
-Supported tracks are `sim/parameter_control`, `sim/invariance`, `sim/object_control`, `real/parameter_control`, `real/object_control`, and `real/friction_diagnostic`. The last track is not included in the formal object-control result.
+Supported tracks are `sim/parameter_control`, `sim/invariance`, `sim/object_control`, `real/parameter_control`, `real/object_control`, and `real/quality`, `sim/plausibility`, `sim/video_quality`, and `real/friction_diagnostic`. The last track is not included in the formal object-control result.
 
 The EnactPhys entry point uses the released step-6000 checkpoint, MLP mass encoder, injection blocks 10–17, CFG 1.2, 30 sampling steps, sigma shift 5.0, and 49 frames at 768 × 448. Output frame rate follows each manifest. Measurement readers use their specified time basis, which need not equal the display frame rate.
 
@@ -108,3 +109,5 @@ python scripts/generate_physdelta.py --dataset data/PhysDelta \
 ```
 
 Remove `--dry-run` to execute. This is the EnactPhys configuration; baseline and ablation methods require their own implementation and settings. The published-input check does not certify a fresh GPU run or a complete regenerated table.
+
+The quality selections reuse numeric-control inputs. `real/quality` contains 75 additional seed-42 PC tasks and 25 existing OC tasks; `sim/plausibility` and `sim/video_quality` each select 215 tasks. The union of the two Sim quality panels contains 18 additional quality-only task IDs; their inputs are included explicitly.
