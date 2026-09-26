@@ -49,7 +49,7 @@ Download the EnactPhys adapter and PhysDelta benchmark inputs:
 
 ```bash
 hf download EnactPhys/EnactPhys --include 'enactphys/*' --local-dir weights
-hf download EnactPhys/PhysDelta --repo-type dataset --local-dir data/PhysDelta
+hf download EnactPhys/PhysDelta --repo-type dataset --exclude 'training/*' --local-dir data/PhysDelta
 tar -xzf data/PhysDelta/sim_inputs.tar.gz -C data/PhysDelta
 tar -xzf data/PhysDelta/real_inputs.tar.gz -C data/PhysDelta
 python scripts/generate_physdelta.py --dataset data/PhysDelta \
@@ -93,6 +93,14 @@ python scripts/reproduce.py --task mechanisms-recorded --out-dir outputs/recorde
 These commands compute aggregates from included measurements, evaluator means and judgments. The current Physics-IQ records aggregate to 48.16. New-video generation and pixel-level scoring are separate operations. The main-table command includes both MORPHEUS columns and checks all 99 displayed values against the approved table. See [workflow coverage](docs/reproduction.md) and [metric definitions](docs/protocol.md).
 
 ## Training
+
+The [training-input release](https://huggingface.co/datasets/EnactPhys/PhysDelta/tree/main/training) contains the original cached inputs, physical conditions, and train/validation manifests. Shards are uploading; the dataset's `training/index.json` records availability. Once complete:
+
+```bash
+hf download EnactPhys/PhysDelta --repo-type dataset --include 'training/*' --local-dir data/PhysDelta
+python data/PhysDelta/training/prepare_training.py --download-dir data/PhysDelta/training --output data/training
+```
+
 
 [configs/train_enactphys.json](configs/train_enactphys.json) specifies 16 GPUs across two nodes, batch size 2 per rank, 6,000 steps, seed 42 and validation every 1,000 steps. Set model, data, output and rendezvous paths after preparing the training caches and conditions.
 
