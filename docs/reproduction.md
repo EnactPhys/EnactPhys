@@ -112,3 +112,5 @@ python scripts/generate_physdelta.py --dataset data/PhysDelta \
 Remove `--dry-run` to execute. This is the EnactPhys configuration; baseline and ablation methods require their own implementation and settings. The published-input check does not certify a fresh GPU run or a complete regenerated table.
 
 The quality selections reuse numeric-control inputs. `real/quality` contains 75 additional seed-42 PC tasks and 25 existing OC tasks; `sim/plausibility` and `sim/video_quality` each select 215 tasks. The union of the two Sim quality panels contains 18 additional quality-only task IDs; their inputs are included explicitly.
+
+Detailed commands: [Physics-IQ](physicsiq_video_reproduction.md) and [MORPHEUS](morpheus_video_scoring.md).

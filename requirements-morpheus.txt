@@ -1,0 +1,10 @@
+-r requirements-tracking.txt
+pandas==2.3.3
+scipy
+pillow
+matplotlib
+scikit-learn
+scikit-image
+natsort
+imageio[ffmpeg]
+transformers==4.51.3
