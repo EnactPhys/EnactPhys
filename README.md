@@ -62,6 +62,8 @@ Remove `--dry-run` to run inference. Use `--task-id` for one task or `--shard-in
 
 ### Physics-IQ
 
+[Single-command generation and video scoring](docs/physicsiq_video_reproduction.md) includes the fixed input download and official reference-data setup.
+
 The included generation entry point reads fixed Physics-IQ task manifests. Prepare the Wan2.2-TI2V-5B base model, input images and conditions, and the step-6000 adapter for adapter-enabled tasks. The base-model directory contains the DiT shards, T5 encoder, VAE and tokenizer.
 
 Inspect one task:

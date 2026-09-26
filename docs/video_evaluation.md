@@ -77,8 +77,7 @@ scores have the entry points in [the reproduction guide](reproduction.md).
 The [MORPHEUS screening workflow](morpheus_screening.md) includes the fixed
 reviewer instructions and a decision-to-score join command.
 
-Portable pixel-to-trajectory entry points for all PC/OC variants and complete
-pixel-level Physics-IQ/MORPHEUS execution remain to be integrated. These are not
+The [Physics-IQ workflow](physicsiq_video_reproduction.md) provides fixed-route generation and pixel scoring. Portable pixel-to-trajectory entry points for all PC/OC variants and complete pixel-level MORPHEUS execution remain to be integrated. These are not
 provided by the recorded-table commands. Base models, evaluation models,
 checkpoints and benchmark inputs must be obtained separately before GPU runs.
 

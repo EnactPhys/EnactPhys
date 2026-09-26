@@ -1,0 +1,5 @@
+-r physicsiq/requirements.txt
+opencv-python-headless==5.0.0.93
+imageio==2.37.0
+imageio-ffmpeg==0.6.0
+tqdm>=4.66
