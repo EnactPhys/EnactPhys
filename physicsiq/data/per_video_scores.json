@@ -1,0 +1,2054 @@
+[
+  {
+    "benchmark_id": "0001",
+    "seed": 43278311,
+    "task_id": "oursop_0001_s43278311",
+    "score": 67.66786213135184
+  },
+  {
+    "benchmark_id": "0001",
+    "seed": 56382197,
+    "task_id": "oursop_0001_s56382197",
+    "score": 67.90185248509648
+  },
+  {
+    "benchmark_id": "0001",
+    "seed": 68491523,
+    "task_id": "oursop_0001_s68491523",
+    "score": 66.37839053630866
+  },
+  {
+    "benchmark_id": "0002",
+    "seed": 43278311,
+    "task_id": "oursop_0002_s43278311",
+    "score": 72.94467012212135
+  },
+  {
+    "benchmark_id": "0002",
+    "seed": 56382197,
+    "task_id": "oursop_0002_s56382197",
+    "score": 69.2782458517772
+  },
+  {
+    "benchmark_id": "0002",
+    "seed": 68491523,
+    "task_id": "oursop_0002_s68491523",
+    "score": 67.56053042909623
+  },
+  {
+    "benchmark_id": "0003",
+    "seed": 43278311,
+    "task_id": "oursop_0003_s43278311",
+    "score": 78.0971470688893
+  },
+  {
+    "benchmark_id": "0003",
+    "seed": 56382197,
+    "task_id": "oursop_0003_s56382197",
+    "score": 75.48126106284624
+  },
+  {
+    "benchmark_id": "0003",
+    "seed": 68491523,
+    "task_id": "oursop_0003_s68491523",
+    "score": 75.84408931466663
+  },
+  {
+    "benchmark_id": "0007",
+    "seed": 43278311,
+    "task_id": "oprem_0007_e0_s43278311",
+    "score": 75.3822865562665
+  },
+  {
+    "benchmark_id": "0007",
+    "seed": 56382197,
+    "task_id": "oprem_0007_e0_s56382197",
+    "score": 72.68259717849567
+  },
+  {
+    "benchmark_id": "0007",
+    "seed": 68491523,
+    "task_id": "oprem_0007_e0_s68491523",
+    "score": 77.42034063428922
+  },
+  {
+    "benchmark_id": "0008",
+    "seed": 43278311,
+    "task_id": "oprem_0008_e0_s43278311",
+    "score": 78.80444224193147
+  },
+  {
+    "benchmark_id": "0008",
+    "seed": 56382197,
+    "task_id": "oprem_0008_e0_s56382197",
+    "score": 78.24699651121125
+  },
+  {
+    "benchmark_id": "0008",
+    "seed": 68491523,
+    "task_id": "oprem_0008_e0_s68491523",
+    "score": 77.66431642156873
+  },
+  {
+    "benchmark_id": "0009",
+    "seed": 43278311,
+    "task_id": "oprem_0009_e0_s43278311",
+    "score": 99.1027284577312
+  },
+  {
+    "benchmark_id": "0009",
+    "seed": 56382197,
+    "task_id": "oprem_0009_e0_s56382197",
+    "score": 93.58824645153109
+  },
+  {
+    "benchmark_id": "0009",
+    "seed": 68491523,
+    "task_id": "oprem_0009_e0_s68491523",
+    "score": 97.32197851861977
+  },
+  {
+    "benchmark_id": "0010",
+    "seed": 43278311,
+    "task_id": "oprem_0010_force_double_s43278311",
+    "score": 44.94383458224272
+  },
+  {
+    "benchmark_id": "0010",
+    "seed": 56382197,
+    "task_id": "oprem_0010_force_double_s56382197",
+    "score": 39.555597413408684
+  },
+  {
+    "benchmark_id": "0010",
+    "seed": 68491523,
+    "task_id": "oprem_0010_force_double_s68491523",
+    "score": 51.741030974405255
+  },
+  {
+    "benchmark_id": "0011",
+    "seed": 43278311,
+    "task_id": "oprem_0011_force_double_s43278311",
+    "score": 49.84764455375149
+  },
+  {
+    "benchmark_id": "0011",
+    "seed": 56382197,
+    "task_id": "oprem_0011_force_double_s56382197",
+    "score": 48.52270865888329
+  },
+  {
+    "benchmark_id": "0011",
+    "seed": 68491523,
+    "task_id": "oprem_0011_force_double_s68491523",
+    "score": 54.82429009350926
+  },
+  {
+    "benchmark_id": "0012",
+    "seed": 43278311,
+    "task_id": "oprem_0012_force_double_s43278311",
+    "score": 36.50264893307408
+  },
+  {
+    "benchmark_id": "0012",
+    "seed": 56382197,
+    "task_id": "oprem_0012_force_double_s56382197",
+    "score": 21.77895539914159
+  },
+  {
+    "benchmark_id": "0012",
+    "seed": 68491523,
+    "task_id": "oprem_0012_force_double_s68491523",
+    "score": 32.246397409245645
+  },
+  {
+    "benchmark_id": "0013",
+    "seed": 43278311,
+    "task_id": "oursop_0013_s43278311",
+    "score": 52.55403802839602
+  },
+  {
+    "benchmark_id": "0013",
+    "seed": 56382197,
+    "task_id": "oursop_0013_s56382197",
+    "score": 59.31284723516431
+  },
+  {
+    "benchmark_id": "0013",
+    "seed": 68491523,
+    "task_id": "oursop_0013_s68491523",
+    "score": 52.78562846231309
+  },
+  {
+    "benchmark_id": "0014",
+    "seed": 43278311,
+    "task_id": "oursop_0014_s43278311",
+    "score": 59.582710595034015
+  },
+  {
+    "benchmark_id": "0014",
+    "seed": 56382197,
+    "task_id": "oursop_0014_s56382197",
+    "score": 63.316794290384195
+  },
+  {
+    "benchmark_id": "0014",
+    "seed": 68491523,
+    "task_id": "oursop_0014_s68491523",
+    "score": 59.371610866901634
+  },
+  {
+    "benchmark_id": "0015",
+    "seed": 43278311,
+    "task_id": "oursop_0015_s43278311",
+    "score": 64.5589108372434
+  },
+  {
+    "benchmark_id": "0015",
+    "seed": 56382197,
+    "task_id": "oursop_0015_s56382197",
+    "score": 72.91997668912597
+  },
+  {
+    "benchmark_id": "0015",
+    "seed": 68491523,
+    "task_id": "oursop_0015_s68491523",
+    "score": 57.906023135442396
+  },
+  {
+    "benchmark_id": "0016",
+    "seed": 43278311,
+    "task_id": "opref_0016_mu070_s43278311",
+    "score": 86.98259803760348
+  },
+  {
+    "benchmark_id": "0016",
+    "seed": 56382197,
+    "task_id": "opref_0016_mu070_s56382197",
+    "score": 87.38453492161324
+  },
+  {
+    "benchmark_id": "0016",
+    "seed": 68491523,
+    "task_id": "opref_0016_mu070_s68491523",
+    "score": 66.60933054986937
+  },
+  {
+    "benchmark_id": "0017",
+    "seed": 43278311,
+    "task_id": "opref_0017_mu070_s43278311",
+    "score": 85.53832871860492
+  },
+  {
+    "benchmark_id": "0017",
+    "seed": 56382197,
+    "task_id": "opref_0017_mu070_s56382197",
+    "score": 83.41078658057002
+  },
+  {
+    "benchmark_id": "0017",
+    "seed": 68491523,
+    "task_id": "opref_0017_mu070_s68491523",
+    "score": 66.27890894715983
+  },
+  {
+    "benchmark_id": "0018",
+    "seed": 43278311,
+    "task_id": "opref_0018_mu070_s43278311",
+    "score": 83.7372602153723
+  },
+  {
+    "benchmark_id": "0018",
+    "seed": 56382197,
+    "task_id": "opref_0018_mu070_s56382197",
+    "score": 90.69380757858501
+  },
+  {
+    "benchmark_id": "0018",
+    "seed": 68491523,
+    "task_id": "opref_0018_mu070_s68491523",
+    "score": 43.015535852180946
+  },
+  {
+    "benchmark_id": "0019",
+    "seed": 43278311,
+    "task_id": "oprem_0019_mu025_s43278311",
+    "score": 75.80673702689299
+  },
+  {
+    "benchmark_id": "0019",
+    "seed": 56382197,
+    "task_id": "oprem_0019_mu025_s56382197",
+    "score": 76.91589001766785
+  },
+  {
+    "benchmark_id": "0019",
+    "seed": 68491523,
+    "task_id": "oprem_0019_mu025_s68491523",
+    "score": 70.57870204901103
+  },
+  {
+    "benchmark_id": "0020",
+    "seed": 43278311,
+    "task_id": "oprem_0020_mu025_s43278311",
+    "score": 76.82586146066093
+  },
+  {
+    "benchmark_id": "0020",
+    "seed": 56382197,
+    "task_id": "oprem_0020_mu025_s56382197",
+    "score": 67.45527652841652
+  },
+  {
+    "benchmark_id": "0020",
+    "seed": 68491523,
+    "task_id": "oprem_0020_mu025_s68491523",
+    "score": 76.86221662468515
+  },
+  {
+    "benchmark_id": "0021",
+    "seed": 43278311,
+    "task_id": "oprem_0021_mu025_s43278311",
+    "score": 76.71236579044798
+  },
+  {
+    "benchmark_id": "0021",
+    "seed": 56382197,
+    "task_id": "oprem_0021_mu025_s56382197",
+    "score": 76.64030027189975
+  },
+  {
+    "benchmark_id": "0021",
+    "seed": 68491523,
+    "task_id": "oprem_0021_mu025_s68491523",
+    "score": 76.64477240398293
+  },
+  {
+    "benchmark_id": "0022",
+    "seed": 43278311,
+    "task_id": "oursop_0022_s43278311",
+    "score": 70.01595306022811
+  },
+  {
+    "benchmark_id": "0022",
+    "seed": 56382197,
+    "task_id": "oursop_0022_s56382197",
+    "score": 63.158077880199116
+  },
+  {
+    "benchmark_id": "0022",
+    "seed": 68491523,
+    "task_id": "oursop_0022_s68491523",
+    "score": 69.24691359893687
+  },
+  {
+    "benchmark_id": "0023",
+    "seed": 43278311,
+    "task_id": "oursop_0023_s43278311",
+    "score": 64.47016867104858
+  },
+  {
+    "benchmark_id": "0023",
+    "seed": 56382197,
+    "task_id": "oursop_0023_s56382197",
+    "score": 73.44122804896104
+  },
+  {
+    "benchmark_id": "0023",
+    "seed": 68491523,
+    "task_id": "oursop_0023_s68491523",
+    "score": 72.4076359341292
+  },
+  {
+    "benchmark_id": "0024",
+    "seed": 43278311,
+    "task_id": "oursop_0024_s43278311",
+    "score": 58.453227278167866
+  },
+  {
+    "benchmark_id": "0024",
+    "seed": 56382197,
+    "task_id": "oursop_0024_s56382197",
+    "score": 70.79157992550266
+  },
+  {
+    "benchmark_id": "0024",
+    "seed": 68491523,
+    "task_id": "oursop_0024_s68491523",
+    "score": 67.16468429815265
+  },
+  {
+    "benchmark_id": "0025",
+    "seed": 43278311,
+    "task_id": "opref_0025_mu005_s43278311",
+    "score": 61.776139147646155
+  },
+  {
+    "benchmark_id": "0025",
+    "seed": 56382197,
+    "task_id": "opref_0025_mu005_s56382197",
+    "score": 70.09816286524003
+  },
+  {
+    "benchmark_id": "0025",
+    "seed": 68491523,
+    "task_id": "opref_0025_mu005_s68491523",
+    "score": 63.39410043409185
+  },
+  {
+    "benchmark_id": "0026",
+    "seed": 43278311,
+    "task_id": "opref_0026_mu005_s43278311",
+    "score": 71.02450906124099
+  },
+  {
+    "benchmark_id": "0026",
+    "seed": 56382197,
+    "task_id": "opref_0026_mu005_s56382197",
+    "score": 69.31640879038254
+  },
+  {
+    "benchmark_id": "0026",
+    "seed": 68491523,
+    "task_id": "opref_0026_mu005_s68491523",
+    "score": 64.64881311711818
+  },
+  {
+    "benchmark_id": "0027",
+    "seed": 43278311,
+    "task_id": "opref_0027_mu005_s43278311",
+    "score": 58.08042142035603
+  },
+  {
+    "benchmark_id": "0027",
+    "seed": 56382197,
+    "task_id": "opref_0027_mu005_s56382197",
+    "score": 67.81426910098367
+  },
+  {
+    "benchmark_id": "0027",
+    "seed": 68491523,
+    "task_id": "opref_0027_mu005_s68491523",
+    "score": 58.59788693445041
+  },
+  {
+    "benchmark_id": "0028",
+    "seed": 43278311,
+    "task_id": "opnum_0028_force4_s43278311",
+    "score": 35.35852642539286
+  },
+  {
+    "benchmark_id": "0028",
+    "seed": 56382197,
+    "task_id": "opnum_0028_force4_s56382197",
+    "score": 53.17058005177652
+  },
+  {
+    "benchmark_id": "0028",
+    "seed": 68491523,
+    "task_id": "opnum_0028_force4_s68491523",
+    "score": 43.642073822637386
+  },
+  {
+    "benchmark_id": "0029",
+    "seed": 43278311,
+    "task_id": "opnum_0029_force4_s43278311",
+    "score": 46.73486336345065
+  },
+  {
+    "benchmark_id": "0029",
+    "seed": 56382197,
+    "task_id": "opnum_0029_force4_s56382197",
+    "score": 42.85963392058614
+  },
+  {
+    "benchmark_id": "0029",
+    "seed": 68491523,
+    "task_id": "opnum_0029_force4_s68491523",
+    "score": 39.86139672884199
+  },
+  {
+    "benchmark_id": "0030",
+    "seed": 43278311,
+    "task_id": "opnum_0030_force4_s43278311",
+    "score": 32.36666234669182
+  },
+  {
+    "benchmark_id": "0030",
+    "seed": 56382197,
+    "task_id": "opnum_0030_force4_s56382197",
+    "score": 38.433770454568474
+  },
+  {
+    "benchmark_id": "0030",
+    "seed": 68491523,
+    "task_id": "opnum_0030_force4_s68491523",
+    "score": 43.55214358943555
+  },
+  {
+    "benchmark_id": "0031",
+    "seed": 43278311,
+    "task_id": "oprem_0031_e0_s43278311",
+    "score": 73.9147314141816
+  },
+  {
+    "benchmark_id": "0031",
+    "seed": 56382197,
+    "task_id": "oprem_0031_e0_s56382197",
+    "score": 76.66373610250203
+  },
+  {
+    "benchmark_id": "0031",
+    "seed": 68491523,
+    "task_id": "oprem_0031_e0_s68491523",
+    "score": 79.50221626254545
+  },
+  {
+    "benchmark_id": "0032",
+    "seed": 43278311,
+    "task_id": "oprem_0032_e0_s43278311",
+    "score": 69.34847927363835
+  },
+  {
+    "benchmark_id": "0032",
+    "seed": 56382197,
+    "task_id": "oprem_0032_e0_s56382197",
+    "score": 71.32820633904787
+  },
+  {
+    "benchmark_id": "0032",
+    "seed": 68491523,
+    "task_id": "oprem_0032_e0_s68491523",
+    "score": 75.28914842090737
+  },
+  {
+    "benchmark_id": "0033",
+    "seed": 43278311,
+    "task_id": "oprem_0033_e0_s43278311",
+    "score": 66.37535596439236
+  },
+  {
+    "benchmark_id": "0033",
+    "seed": 56382197,
+    "task_id": "oprem_0033_e0_s56382197",
+    "score": 71.89622562684532
+  },
+  {
+    "benchmark_id": "0033",
+    "seed": 68491523,
+    "task_id": "oprem_0033_e0_s68491523",
+    "score": 61.96675687851386
+  },
+  {
+    "benchmark_id": "0034",
+    "seed": 43278311,
+    "task_id": "opref_0034_f300_s43278311",
+    "score": 45.974110782825555
+  },
+  {
+    "benchmark_id": "0034",
+    "seed": 56382197,
+    "task_id": "opref_0034_f300_s56382197",
+    "score": 47.43772323559893
+  },
+  {
+    "benchmark_id": "0034",
+    "seed": 68491523,
+    "task_id": "opref_0034_f300_s68491523",
+    "score": 41.41689534422155
+  },
+  {
+    "benchmark_id": "0035",
+    "seed": 43278311,
+    "task_id": "opref_0035_f300_s43278311",
+    "score": 42.547851515385005
+  },
+  {
+    "benchmark_id": "0035",
+    "seed": 56382197,
+    "task_id": "opref_0035_f300_s56382197",
+    "score": 26.62087162950414
+  },
+  {
+    "benchmark_id": "0035",
+    "seed": 68491523,
+    "task_id": "opref_0035_f300_s68491523",
+    "score": 36.269593501763445
+  },
+  {
+    "benchmark_id": "0036",
+    "seed": 43278311,
+    "task_id": "opref_0036_f300_s43278311",
+    "score": 45.8622413487125
+  },
+  {
+    "benchmark_id": "0036",
+    "seed": 56382197,
+    "task_id": "opref_0036_f300_s56382197",
+    "score": 39.77873194662075
+  },
+  {
+    "benchmark_id": "0036",
+    "seed": 68491523,
+    "task_id": "opref_0036_f300_s68491523",
+    "score": 45.412292222614006
+  },
+  {
+    "benchmark_id": "0040",
+    "seed": 43278311,
+    "task_id": "oprem_0040_mass10_s43278311",
+    "score": 75.77232207682312
+  },
+  {
+    "benchmark_id": "0040",
+    "seed": 56382197,
+    "task_id": "oprem_0040_mass10_s56382197",
+    "score": 61.48571256427542
+  },
+  {
+    "benchmark_id": "0040",
+    "seed": 68491523,
+    "task_id": "oprem_0040_mass10_s68491523",
+    "score": 73.93572679701651
+  },
+  {
+    "benchmark_id": "0051",
+    "seed": 43278311,
+    "task_id": "opref_0051_object_f050_s43278311",
+    "score": 42.79137113555512
+  },
+  {
+    "benchmark_id": "0051",
+    "seed": 56382197,
+    "task_id": "opref_0051_object_f050_s56382197",
+    "score": 33.421633632824935
+  },
+  {
+    "benchmark_id": "0051",
+    "seed": 68491523,
+    "task_id": "opref_0051_object_f050_s68491523",
+    "score": 32.699723712981076
+  },
+  {
+    "benchmark_id": "0052",
+    "seed": 43278311,
+    "task_id": "oprem_0052_g05_s43278311",
+    "score": 20.437474617205865
+  },
+  {
+    "benchmark_id": "0052",
+    "seed": 56382197,
+    "task_id": "oprem_0052_g05_s56382197",
+    "score": 9.695750501213448
+  },
+  {
+    "benchmark_id": "0052",
+    "seed": 68491523,
+    "task_id": "oprem_0052_g05_s68491523",
+    "score": 11.574030586683353
+  },
+  {
+    "benchmark_id": "0054",
+    "seed": 43278311,
+    "task_id": "oprem_0054_g05_s43278311",
+    "score": 15.47001012722024
+  },
+  {
+    "benchmark_id": "0054",
+    "seed": 56382197,
+    "task_id": "oprem_0054_g05_s56382197",
+    "score": 10.589092553123583
+  },
+  {
+    "benchmark_id": "0054",
+    "seed": 68491523,
+    "task_id": "oprem_0054_g05_s68491523",
+    "score": 16.304069974731796
+  },
+  {
+    "benchmark_id": "0055",
+    "seed": 43278311,
+    "task_id": "oprem_0055_mass10_s43278311",
+    "score": 23.159611285131092
+  },
+  {
+    "benchmark_id": "0055",
+    "seed": 56382197,
+    "task_id": "oprem_0055_mass10_s56382197",
+    "score": 22.722834507528212
+  },
+  {
+    "benchmark_id": "0055",
+    "seed": 68491523,
+    "task_id": "oprem_0055_mass10_s68491523",
+    "score": 24.630013433167893
+  },
+  {
+    "benchmark_id": "0057",
+    "seed": 43278311,
+    "task_id": "oprem_0057_mass10_s43278311",
+    "score": 24.127771225981245
+  },
+  {
+    "benchmark_id": "0057",
+    "seed": 56382197,
+    "task_id": "oprem_0057_mass10_s56382197",
+    "score": 22.82223610740003
+  },
+  {
+    "benchmark_id": "0057",
+    "seed": 68491523,
+    "task_id": "oprem_0057_mass10_s68491523",
+    "score": 24.09129928311264
+  },
+  {
+    "benchmark_id": "0058",
+    "seed": 43278311,
+    "task_id": "oprem_0058_e0_s43278311",
+    "score": 47.5116146140021
+  },
+  {
+    "benchmark_id": "0058",
+    "seed": 56382197,
+    "task_id": "oprem_0058_e0_s56382197",
+    "score": 49.875961873342064
+  },
+  {
+    "benchmark_id": "0058",
+    "seed": 68491523,
+    "task_id": "oprem_0058_e0_s68491523",
+    "score": 48.91840882161025
+  },
+  {
+    "benchmark_id": "0059",
+    "seed": 43278311,
+    "task_id": "oprem_0059_e0_s43278311",
+    "score": 24.240315000845424
+  },
+  {
+    "benchmark_id": "0059",
+    "seed": 56382197,
+    "task_id": "oprem_0059_e0_s56382197",
+    "score": 31.686936704460404
+  },
+  {
+    "benchmark_id": "0059",
+    "seed": 68491523,
+    "task_id": "oprem_0059_e0_s68491523",
+    "score": 32.10372616127833
+  },
+  {
+    "benchmark_id": "0060",
+    "seed": 43278311,
+    "task_id": "oprem_0060_e0_s43278311",
+    "score": 42.17373867380395
+  },
+  {
+    "benchmark_id": "0060",
+    "seed": 56382197,
+    "task_id": "oprem_0060_e0_s56382197",
+    "score": 57.510215753729234
+  },
+  {
+    "benchmark_id": "0060",
+    "seed": 68491523,
+    "task_id": "oprem_0060_e0_s68491523",
+    "score": 50.05619258137445
+  },
+  {
+    "benchmark_id": "0061",
+    "seed": 43278311,
+    "task_id": "oprem_0061_mass10_s43278311",
+    "score": 75.00003028341266
+  },
+  {
+    "benchmark_id": "0061",
+    "seed": 56382197,
+    "task_id": "oprem_0061_mass10_s56382197",
+    "score": 75.00003047398003
+  },
+  {
+    "benchmark_id": "0061",
+    "seed": 68491523,
+    "task_id": "oprem_0061_mass10_s68491523",
+    "score": 75.0000301173732
+  },
+  {
+    "benchmark_id": "0062",
+    "seed": 43278311,
+    "task_id": "oprem_0062_mass10_s43278311",
+    "score": 75.00004470454546
+  },
+  {
+    "benchmark_id": "0062",
+    "seed": 56382197,
+    "task_id": "oprem_0062_mass10_s56382197",
+    "score": 75.00004470454546
+  },
+  {
+    "benchmark_id": "0062",
+    "seed": 68491523,
+    "task_id": "oprem_0062_mass10_s68491523",
+    "score": 75.0000446426464
+  },
+  {
+    "benchmark_id": "0063",
+    "seed": 43278311,
+    "task_id": "oprem_0063_mass10_s43278311",
+    "score": 75.00003089556964
+  },
+  {
+    "benchmark_id": "0063",
+    "seed": 56382197,
+    "task_id": "oprem_0063_mass10_s56382197",
+    "score": 75.00003086222341
+  },
+  {
+    "benchmark_id": "0063",
+    "seed": 68491523,
+    "task_id": "oprem_0063_mass10_s68491523",
+    "score": 75.00003077585122
+  },
+  {
+    "benchmark_id": "0103",
+    "seed": 43278311,
+    "task_id": "oursop_0103_s43278311",
+    "score": 30.830812322506457
+  },
+  {
+    "benchmark_id": "0103",
+    "seed": 56382197,
+    "task_id": "oursop_0103_s56382197",
+    "score": 21.96191123115273
+  },
+  {
+    "benchmark_id": "0103",
+    "seed": 68491523,
+    "task_id": "oursop_0103_s68491523",
+    "score": 42.56323424984236
+  },
+  {
+    "benchmark_id": "0104",
+    "seed": 43278311,
+    "task_id": "oursop_0104_s43278311",
+    "score": 28.29762638302926
+  },
+  {
+    "benchmark_id": "0104",
+    "seed": 56382197,
+    "task_id": "oursop_0104_s56382197",
+    "score": 31.609401941234953
+  },
+  {
+    "benchmark_id": "0104",
+    "seed": 68491523,
+    "task_id": "oursop_0104_s68491523",
+    "score": 26.625613733961046
+  },
+  {
+    "benchmark_id": "0105",
+    "seed": 43278311,
+    "task_id": "oursop_0105_s43278311",
+    "score": 31.2502897043793
+  },
+  {
+    "benchmark_id": "0105",
+    "seed": 56382197,
+    "task_id": "oursop_0105_s56382197",
+    "score": 22.56217806988791
+  },
+  {
+    "benchmark_id": "0105",
+    "seed": 68491523,
+    "task_id": "oursop_0105_s68491523",
+    "score": 24.203847965230146
+  },
+  {
+    "benchmark_id": "0106",
+    "seed": 43278311,
+    "task_id": "opref_0106_g0375_s43278311",
+    "score": 26.729829610868066
+  },
+  {
+    "benchmark_id": "0106",
+    "seed": 56382197,
+    "task_id": "opref_0106_g0375_s56382197",
+    "score": 26.698925825418364
+  },
+  {
+    "benchmark_id": "0106",
+    "seed": 68491523,
+    "task_id": "opref_0106_g0375_s68491523",
+    "score": 26.853872302596226
+  },
+  {
+    "benchmark_id": "0107",
+    "seed": 43278311,
+    "task_id": "opref_0107_g0375_s43278311",
+    "score": 35.36916044842294
+  },
+  {
+    "benchmark_id": "0107",
+    "seed": 56382197,
+    "task_id": "opref_0107_g0375_s56382197",
+    "score": 25.648276400417586
+  },
+  {
+    "benchmark_id": "0107",
+    "seed": 68491523,
+    "task_id": "opref_0107_g0375_s68491523",
+    "score": 26.287140389704707
+  },
+  {
+    "benchmark_id": "0108",
+    "seed": 43278311,
+    "task_id": "opref_0108_g0375_s43278311",
+    "score": 28.990638681651948
+  },
+  {
+    "benchmark_id": "0108",
+    "seed": 56382197,
+    "task_id": "opref_0108_g0375_s56382197",
+    "score": 28.944176583466312
+  },
+  {
+    "benchmark_id": "0108",
+    "seed": 68491523,
+    "task_id": "opref_0108_g0375_s68491523",
+    "score": 25.71270934790355
+  },
+  {
+    "benchmark_id": "0124",
+    "seed": 43278311,
+    "task_id": "opref_0124_e0_s43278311",
+    "score": 52.32261134249219
+  },
+  {
+    "benchmark_id": "0124",
+    "seed": 56382197,
+    "task_id": "opref_0124_e0_s56382197",
+    "score": 46.27366468223189
+  },
+  {
+    "benchmark_id": "0124",
+    "seed": 68491523,
+    "task_id": "opref_0124_e0_s68491523",
+    "score": 48.20673570816349
+  },
+  {
+    "benchmark_id": "0125",
+    "seed": 43278311,
+    "task_id": "opref_0125_e0_s43278311",
+    "score": 54.61920255827113
+  },
+  {
+    "benchmark_id": "0125",
+    "seed": 56382197,
+    "task_id": "opref_0125_e0_s56382197",
+    "score": 54.23254151027208
+  },
+  {
+    "benchmark_id": "0125",
+    "seed": 68491523,
+    "task_id": "opref_0125_e0_s68491523",
+    "score": 54.190101832174584
+  },
+  {
+    "benchmark_id": "0126",
+    "seed": 43278311,
+    "task_id": "opref_0126_e0_s43278311",
+    "score": 60.2632466398722
+  },
+  {
+    "benchmark_id": "0126",
+    "seed": 56382197,
+    "task_id": "opref_0126_e0_s56382197",
+    "score": 60.34717612411625
+  },
+  {
+    "benchmark_id": "0126",
+    "seed": 68491523,
+    "task_id": "opref_0126_e0_s68491523",
+    "score": 61.8683015634296
+  },
+  {
+    "benchmark_id": "0145",
+    "seed": 43278311,
+    "task_id": "opref_0145_mu005_s43278311",
+    "score": 38.89203252573093
+  },
+  {
+    "benchmark_id": "0145",
+    "seed": 56382197,
+    "task_id": "opref_0145_mu005_s56382197",
+    "score": 57.548161099676335
+  },
+  {
+    "benchmark_id": "0145",
+    "seed": 68491523,
+    "task_id": "opref_0145_mu005_s68491523",
+    "score": 48.50923639255334
+  },
+  {
+    "benchmark_id": "0146",
+    "seed": 43278311,
+    "task_id": "opref_0146_mu005_s43278311",
+    "score": 40.78053455716842
+  },
+  {
+    "benchmark_id": "0146",
+    "seed": 56382197,
+    "task_id": "opref_0146_mu005_s56382197",
+    "score": 45.95472267702976
+  },
+  {
+    "benchmark_id": "0146",
+    "seed": 68491523,
+    "task_id": "opref_0146_mu005_s68491523",
+    "score": 30.311373532817086
+  },
+  {
+    "benchmark_id": "0147",
+    "seed": 43278311,
+    "task_id": "opref_0147_mu005_s43278311",
+    "score": 24.854540721071007
+  },
+  {
+    "benchmark_id": "0147",
+    "seed": 56382197,
+    "task_id": "opref_0147_mu005_s56382197",
+    "score": 55.77282561378377
+  },
+  {
+    "benchmark_id": "0147",
+    "seed": 68491523,
+    "task_id": "opref_0147_mu005_s68491523",
+    "score": 28.89573159092481
+  },
+  {
+    "benchmark_id": "0148",
+    "seed": 43278311,
+    "task_id": "opref_0148_mu005_s43278311",
+    "score": 71.86966518021383
+  },
+  {
+    "benchmark_id": "0148",
+    "seed": 56382197,
+    "task_id": "opref_0148_mu005_s56382197",
+    "score": 68.60176053141268
+  },
+  {
+    "benchmark_id": "0148",
+    "seed": 68491523,
+    "task_id": "opref_0148_mu005_s68491523",
+    "score": 67.41486429036843
+  },
+  {
+    "benchmark_id": "0149",
+    "seed": 43278311,
+    "task_id": "opref_0149_mu005_s43278311",
+    "score": 74.1774828504841
+  },
+  {
+    "benchmark_id": "0149",
+    "seed": 56382197,
+    "task_id": "opref_0149_mu005_s56382197",
+    "score": 66.7491042217727
+  },
+  {
+    "benchmark_id": "0149",
+    "seed": 68491523,
+    "task_id": "opref_0149_mu005_s68491523",
+    "score": 62.2524809737688
+  },
+  {
+    "benchmark_id": "0150",
+    "seed": 43278311,
+    "task_id": "opref_0150_mu005_s43278311",
+    "score": 75.93866637534853
+  },
+  {
+    "benchmark_id": "0150",
+    "seed": 56382197,
+    "task_id": "opref_0150_mu005_s56382197",
+    "score": 67.387326868332
+  },
+  {
+    "benchmark_id": "0150",
+    "seed": 68491523,
+    "task_id": "opref_0150_mu005_s68491523",
+    "score": 68.62831721065473
+  },
+  {
+    "benchmark_id": "0151",
+    "seed": 43278311,
+    "task_id": "oursop_0151_s43278311",
+    "score": 77.0651092329772
+  },
+  {
+    "benchmark_id": "0151",
+    "seed": 56382197,
+    "task_id": "oursop_0151_s56382197",
+    "score": 77.041024428684
+  },
+  {
+    "benchmark_id": "0151",
+    "seed": 68491523,
+    "task_id": "oursop_0151_s68491523",
+    "score": 77.00128264564982
+  },
+  {
+    "benchmark_id": "0152",
+    "seed": 43278311,
+    "task_id": "oursop_0152_s43278311",
+    "score": 75.83577939790501
+  },
+  {
+    "benchmark_id": "0152",
+    "seed": 56382197,
+    "task_id": "oursop_0152_s56382197",
+    "score": 75.60370214588878
+  },
+  {
+    "benchmark_id": "0152",
+    "seed": 68491523,
+    "task_id": "oursop_0152_s68491523",
+    "score": 76.1727047284723
+  },
+  {
+    "benchmark_id": "0153",
+    "seed": 43278311,
+    "task_id": "oursop_0153_s43278311",
+    "score": 75.70322648936687
+  },
+  {
+    "benchmark_id": "0153",
+    "seed": 56382197,
+    "task_id": "oursop_0153_s56382197",
+    "score": 76.10176486627303
+  },
+  {
+    "benchmark_id": "0153",
+    "seed": 68491523,
+    "task_id": "oursop_0153_s68491523",
+    "score": 75.20175676919906
+  },
+  {
+    "benchmark_id": "0162",
+    "seed": 43278311,
+    "task_id": "oprem_0162_g05_s43278311",
+    "score": 10.530857559388144
+  },
+  {
+    "benchmark_id": "0162",
+    "seed": 56382197,
+    "task_id": "oprem_0162_g05_s56382197",
+    "score": 10.854399582615827
+  },
+  {
+    "benchmark_id": "0162",
+    "seed": 68491523,
+    "task_id": "oprem_0162_g05_s68491523",
+    "score": 11.303378351754217
+  },
+  {
+    "benchmark_id": "0172",
+    "seed": 43278311,
+    "task_id": "opref_0172_m025_s43278311",
+    "score": 56.00234660357124
+  },
+  {
+    "benchmark_id": "0172",
+    "seed": 56382197,
+    "task_id": "opref_0172_m025_s56382197",
+    "score": 34.12015074269714
+  },
+  {
+    "benchmark_id": "0172",
+    "seed": 68491523,
+    "task_id": "opref_0172_m025_s68491523",
+    "score": 57.627504385644876
+  },
+  {
+    "benchmark_id": "0173",
+    "seed": 43278311,
+    "task_id": "opref_0173_m025_s43278311",
+    "score": 27.9721931395509
+  },
+  {
+    "benchmark_id": "0173",
+    "seed": 56382197,
+    "task_id": "opref_0173_m025_s56382197",
+    "score": 62.17577436829052
+  },
+  {
+    "benchmark_id": "0173",
+    "seed": 68491523,
+    "task_id": "opref_0173_m025_s68491523",
+    "score": 27.954690495754587
+  },
+  {
+    "benchmark_id": "0174",
+    "seed": 43278311,
+    "task_id": "opref_0174_m025_s43278311",
+    "score": 59.62979042124189
+  },
+  {
+    "benchmark_id": "0174",
+    "seed": 56382197,
+    "task_id": "opref_0174_m025_s56382197",
+    "score": 70.29873669809528
+  },
+  {
+    "benchmark_id": "0174",
+    "seed": 68491523,
+    "task_id": "opref_0174_m025_s68491523",
+    "score": 70.96158692742739
+  },
+  {
+    "benchmark_id": "0178",
+    "seed": 43278311,
+    "task_id": "oursop_0178_s43278311",
+    "score": 75.20310450947167
+  },
+  {
+    "benchmark_id": "0178",
+    "seed": 56382197,
+    "task_id": "oursop_0178_s56382197",
+    "score": 74.66057842754932
+  },
+  {
+    "benchmark_id": "0178",
+    "seed": 68491523,
+    "task_id": "oursop_0178_s68491523",
+    "score": 68.38200559238913
+  },
+  {
+    "benchmark_id": "0179",
+    "seed": 43278311,
+    "task_id": "oursop_0179_s43278311",
+    "score": 66.29493785003308
+  },
+  {
+    "benchmark_id": "0179",
+    "seed": 56382197,
+    "task_id": "oursop_0179_s56382197",
+    "score": 62.814758893954945
+  },
+  {
+    "benchmark_id": "0179",
+    "seed": 68491523,
+    "task_id": "oursop_0179_s68491523",
+    "score": 46.72138327539269
+  },
+  {
+    "benchmark_id": "0180",
+    "seed": 43278311,
+    "task_id": "oursop_0180_s43278311",
+    "score": 68.80259601745904
+  },
+  {
+    "benchmark_id": "0180",
+    "seed": 56382197,
+    "task_id": "oursop_0180_s56382197",
+    "score": 71.8255607658488
+  },
+  {
+    "benchmark_id": "0180",
+    "seed": 68491523,
+    "task_id": "oursop_0180_s68491523",
+    "score": 71.59880645295176
+  },
+  {
+    "benchmark_id": "0181",
+    "seed": 43278311,
+    "task_id": "oprem_0181_g05_s43278311",
+    "score": 55.54351738242032
+  },
+  {
+    "benchmark_id": "0181",
+    "seed": 56382197,
+    "task_id": "oprem_0181_g05_s56382197",
+    "score": 55.3585967000075
+  },
+  {
+    "benchmark_id": "0181",
+    "seed": 68491523,
+    "task_id": "oprem_0181_g05_s68491523",
+    "score": 49.402621701222685
+  },
+  {
+    "benchmark_id": "0182",
+    "seed": 43278311,
+    "task_id": "oprem_0182_g05_s43278311",
+    "score": 56.14854461118808
+  },
+  {
+    "benchmark_id": "0182",
+    "seed": 56382197,
+    "task_id": "oprem_0182_g05_s56382197",
+    "score": 50.422408030675456
+  },
+  {
+    "benchmark_id": "0182",
+    "seed": 68491523,
+    "task_id": "oprem_0182_g05_s68491523",
+    "score": 39.7197736564366
+  },
+  {
+    "benchmark_id": "0183",
+    "seed": 43278311,
+    "task_id": "oprem_0183_g05_s43278311",
+    "score": 58.53896275035212
+  },
+  {
+    "benchmark_id": "0183",
+    "seed": 56382197,
+    "task_id": "oprem_0183_g05_s56382197",
+    "score": 50.99246037978307
+  },
+  {
+    "benchmark_id": "0183",
+    "seed": 68491523,
+    "task_id": "oprem_0183_g05_s68491523",
+    "score": 51.13328148173728
+  },
+  {
+    "benchmark_id": "0188",
+    "seed": 43278311,
+    "task_id": "oprem_0188_g025_s43278311",
+    "score": 50.688258355875604
+  },
+  {
+    "benchmark_id": "0188",
+    "seed": 56382197,
+    "task_id": "oprem_0188_g025_s56382197",
+    "score": 46.93683392218123
+  },
+  {
+    "benchmark_id": "0188",
+    "seed": 68491523,
+    "task_id": "oprem_0188_g025_s68491523",
+    "score": 48.1085653104925
+  },
+  {
+    "benchmark_id": "0190",
+    "seed": 43278311,
+    "task_id": "opmg_0190_both_g025_s43278311",
+    "score": 93.90865943691556
+  },
+  {
+    "benchmark_id": "0190",
+    "seed": 56382197,
+    "task_id": "opmg_0190_both_g025_s56382197",
+    "score": 92.93973785018692
+  },
+  {
+    "benchmark_id": "0190",
+    "seed": 68491523,
+    "task_id": "opmg_0190_both_g025_s68491523",
+    "score": 75.37502869832245
+  },
+  {
+    "benchmark_id": "0191",
+    "seed": 43278311,
+    "task_id": "opmg_0191_both_g025_s43278311",
+    "score": 76.32223662449218
+  },
+  {
+    "benchmark_id": "0191",
+    "seed": 56382197,
+    "task_id": "opmg_0191_both_g025_s56382197",
+    "score": 82.84835007929784
+  },
+  {
+    "benchmark_id": "0191",
+    "seed": 68491523,
+    "task_id": "opmg_0191_both_g025_s68491523",
+    "score": 88.22555845121055
+  },
+  {
+    "benchmark_id": "0192",
+    "seed": 43278311,
+    "task_id": "opmg_0192_both_g025_s43278311",
+    "score": 62.57721489814002
+  },
+  {
+    "benchmark_id": "0192",
+    "seed": 56382197,
+    "task_id": "opmg_0192_both_g025_s56382197",
+    "score": 88.60499678480917
+  },
+  {
+    "benchmark_id": "0192",
+    "seed": 68491523,
+    "task_id": "opmg_0192_both_g025_s68491523",
+    "score": 73.07096941725652
+  },
+  {
+    "benchmark_id": "0193",
+    "seed": 43278311,
+    "task_id": "opref_0193_g075_s43278311",
+    "score": 47.17306574149677
+  },
+  {
+    "benchmark_id": "0193",
+    "seed": 56382197,
+    "task_id": "opref_0193_g075_s56382197",
+    "score": 44.098626785298556
+  },
+  {
+    "benchmark_id": "0193",
+    "seed": 68491523,
+    "task_id": "opref_0193_g075_s68491523",
+    "score": 49.629411603419946
+  },
+  {
+    "benchmark_id": "0197",
+    "seed": 43278311,
+    "task_id": "oprem_0197_force_half_s43278311",
+    "score": 26.52142222700533
+  },
+  {
+    "benchmark_id": "0197",
+    "seed": 56382197,
+    "task_id": "oprem_0197_force_half_s56382197",
+    "score": 23.081326820825094
+  },
+  {
+    "benchmark_id": "0197",
+    "seed": 68491523,
+    "task_id": "oprem_0197_force_half_s68491523",
+    "score": 27.48318820490146
+  },
+  {
+    "benchmark_id": "0198",
+    "seed": 43278311,
+    "task_id": "oprem_0198_force_half_s43278311",
+    "score": 26.67833094570664
+  },
+  {
+    "benchmark_id": "0198",
+    "seed": 56382197,
+    "task_id": "oprem_0198_force_half_s56382197",
+    "score": 23.250007290997402
+  },
+  {
+    "benchmark_id": "0198",
+    "seed": 68491523,
+    "task_id": "oprem_0198_force_half_s68491523",
+    "score": 25.684065329831306
+  },
+  {
+    "benchmark_id": "0004",
+    "seed": 43278311,
+    "task_id": "op34_wan34_0004_s43278311",
+    "score": 9.78701460699654
+  },
+  {
+    "benchmark_id": "0004",
+    "seed": 56382197,
+    "task_id": "op34_wan34_0004_s56382197",
+    "score": 14.972525931887573
+  },
+  {
+    "benchmark_id": "0004",
+    "seed": 68491523,
+    "task_id": "op34_wan34_0004_s68491523",
+    "score": 11.270055127549394
+  },
+  {
+    "benchmark_id": "0005",
+    "seed": 43278311,
+    "task_id": "op34_wan34_0005_s43278311",
+    "score": 13.009821450750735
+  },
+  {
+    "benchmark_id": "0005",
+    "seed": 56382197,
+    "task_id": "op34_wan34_0005_s56382197",
+    "score": 13.035256374060635
+  },
+  {
+    "benchmark_id": "0005",
+    "seed": 68491523,
+    "task_id": "op34_wan34_0005_s68491523",
+    "score": 15.72689921588816
+  },
+  {
+    "benchmark_id": "0006",
+    "seed": 43278311,
+    "task_id": "op34_wan34_0006_s43278311",
+    "score": 13.799950138049072
+  },
+  {
+    "benchmark_id": "0006",
+    "seed": 56382197,
+    "task_id": "op34_wan34_0006_s56382197",
+    "score": 9.500518527091726
+  },
+  {
+    "benchmark_id": "0006",
+    "seed": 68491523,
+    "task_id": "op34_wan34_0006_s68491523",
+    "score": 7.051186996469511
+  },
+  {
+    "benchmark_id": "0041",
+    "seed": 43278311,
+    "task_id": "op34_wan34_0041_s43278311",
+    "score": 61.46599644941547
+  },
+  {
+    "benchmark_id": "0041",
+    "seed": 56382197,
+    "task_id": "op34_wan34_0041_s56382197",
+    "score": 51.23328423467716
+  },
+  {
+    "benchmark_id": "0041",
+    "seed": 68491523,
+    "task_id": "op34_wan34_0041_s68491523",
+    "score": 53.752666004825514
+  },
+  {
+    "benchmark_id": "0042",
+    "seed": 43278311,
+    "task_id": "op34_wan34_0042_s43278311",
+    "score": 62.52983870426748
+  },
+  {
+    "benchmark_id": "0042",
+    "seed": 56382197,
+    "task_id": "op34_wan34_0042_s56382197",
+    "score": 49.14321683660705
+  },
+  {
+    "benchmark_id": "0042",
+    "seed": 68491523,
+    "task_id": "op34_wan34_0042_s68491523",
+    "score": 59.966678674232284
+  },
+  {
+    "benchmark_id": "0043",
+    "seed": 43278311,
+    "task_id": "op34_wan34_0043_s43278311",
+    "score": 58.87179551044841
+  },
+  {
+    "benchmark_id": "0043",
+    "seed": 56382197,
+    "task_id": "op34_wan34_0043_s56382197",
+    "score": 66.7024581883215
+  },
+  {
+    "benchmark_id": "0043",
+    "seed": 68491523,
+    "task_id": "op34_wan34_0043_s68491523",
+    "score": 58.869542707090375
+  },
+  {
+    "benchmark_id": "0044",
+    "seed": 43278311,
+    "task_id": "op34_wan34_0044_s43278311",
+    "score": 64.37289441032716
+  },
+  {
+    "benchmark_id": "0044",
+    "seed": 56382197,
+    "task_id": "op34_wan34_0044_s56382197",
+    "score": 66.40894690361155
+  },
+  {
+    "benchmark_id": "0044",
+    "seed": 68491523,
+    "task_id": "op34_wan34_0044_s68491523",
+    "score": 62.210062044011615
+  },
+  {
+    "benchmark_id": "0045",
+    "seed": 43278311,
+    "task_id": "op34_wan34_0045_s43278311",
+    "score": 66.06227782482432
+  },
+  {
+    "benchmark_id": "0045",
+    "seed": 56382197,
+    "task_id": "op34_wan34_0045_s56382197",
+    "score": 57.25340906453439
+  },
+  {
+    "benchmark_id": "0045",
+    "seed": 68491523,
+    "task_id": "op34_wan34_0045_s68491523",
+    "score": 62.981669116176356
+  },
+  {
+    "benchmark_id": "0049",
+    "seed": 43278311,
+    "task_id": "op34_wan34_0049_s43278311",
+    "score": 20.27874809055899
+  },
+  {
+    "benchmark_id": "0049",
+    "seed": 56382197,
+    "task_id": "op34_wan34_0049_s56382197",
+    "score": 15.979368455215948
+  },
+  {
+    "benchmark_id": "0049",
+    "seed": 68491523,
+    "task_id": "op34_wan34_0049_s68491523",
+    "score": 17.417604991331356
+  },
+  {
+    "benchmark_id": "0050",
+    "seed": 43278311,
+    "task_id": "op34_wan34_0050_s43278311",
+    "score": 20.17831140985401
+  },
+  {
+    "benchmark_id": "0050",
+    "seed": 56382197,
+    "task_id": "op34_wan34_0050_s56382197",
+    "score": 25.92602020036275
+  },
+  {
+    "benchmark_id": "0050",
+    "seed": 68491523,
+    "task_id": "op34_wan34_0050_s68491523",
+    "score": 18.899386778072234
+  },
+  {
+    "benchmark_id": "0053",
+    "seed": 43278311,
+    "task_id": "op34_wan34_0053_s43278311",
+    "score": 8.722957414251713
+  },
+  {
+    "benchmark_id": "0053",
+    "seed": 56382197,
+    "task_id": "op34_wan34_0053_s56382197",
+    "score": 10.120014768897551
+  },
+  {
+    "benchmark_id": "0053",
+    "seed": 68491523,
+    "task_id": "op34_wan34_0053_s68491523",
+    "score": 6.7692979747488256
+  },
+  {
+    "benchmark_id": "0056",
+    "seed": 43278311,
+    "task_id": "op34_wan34_0056_s43278311",
+    "score": 19.04042447743513
+  },
+  {
+    "benchmark_id": "0056",
+    "seed": 56382197,
+    "task_id": "op34_wan34_0056_s56382197",
+    "score": 23.51435245607536
+  },
+  {
+    "benchmark_id": "0056",
+    "seed": 68491523,
+    "task_id": "op34_wan34_0056_s68491523",
+    "score": 18.20394970388361
+  },
+  {
+    "benchmark_id": "0097",
+    "seed": 43278311,
+    "task_id": "op34_wan34_0097_s43278311",
+    "score": 25.784533728815877
+  },
+  {
+    "benchmark_id": "0097",
+    "seed": 56382197,
+    "task_id": "op34_wan34_0097_s56382197",
+    "score": 23.01387048253375
+  },
+  {
+    "benchmark_id": "0097",
+    "seed": 68491523,
+    "task_id": "op34_wan34_0097_s68491523",
+    "score": 44.865968114887934
+  },
+  {
+    "benchmark_id": "0098",
+    "seed": 43278311,
+    "task_id": "op34_wan34_0098_s43278311",
+    "score": 61.19822804656193
+  },
+  {
+    "benchmark_id": "0098",
+    "seed": 56382197,
+    "task_id": "op34_wan34_0098_s56382197",
+    "score": 32.60152458899698
+  },
+  {
+    "benchmark_id": "0098",
+    "seed": 68491523,
+    "task_id": "op34_wan34_0098_s68491523",
+    "score": 53.325832695886874
+  },
+  {
+    "benchmark_id": "0099",
+    "seed": 43278311,
+    "task_id": "op34_wan34_0099_s43278311",
+    "score": 36.19963267551676
+  },
+  {
+    "benchmark_id": "0099",
+    "seed": 56382197,
+    "task_id": "op34_wan34_0099_s56382197",
+    "score": 59.60359874380312
+  },
+  {
+    "benchmark_id": "0099",
+    "seed": 68491523,
+    "task_id": "op34_wan34_0099_s68491523",
+    "score": 30.463371151170875
+  },
+  {
+    "benchmark_id": "0157",
+    "seed": 43278311,
+    "task_id": "op34_wan34_0157_s43278311",
+    "score": 70.11362080485037
+  },
+  {
+    "benchmark_id": "0157",
+    "seed": 56382197,
+    "task_id": "op34_wan34_0157_s56382197",
+    "score": 46.944751007043
+  },
+  {
+    "benchmark_id": "0157",
+    "seed": 68491523,
+    "task_id": "op34_wan34_0157_s68491523",
+    "score": 65.9524455772581
+  },
+  {
+    "benchmark_id": "0158",
+    "seed": 43278311,
+    "task_id": "op34_wan34_0158_s43278311",
+    "score": 62.885141228498235
+  },
+  {
+    "benchmark_id": "0158",
+    "seed": 56382197,
+    "task_id": "op34_wan34_0158_s56382197",
+    "score": 54.54174461959083
+  },
+  {
+    "benchmark_id": "0158",
+    "seed": 68491523,
+    "task_id": "op34_wan34_0158_s68491523",
+    "score": 60.28766949532645
+  },
+  {
+    "benchmark_id": "0159",
+    "seed": 43278311,
+    "task_id": "op34_wan34_0159_s43278311",
+    "score": 66.51074791213146
+  },
+  {
+    "benchmark_id": "0159",
+    "seed": 56382197,
+    "task_id": "op34_wan34_0159_s56382197",
+    "score": 51.88068439568095
+  },
+  {
+    "benchmark_id": "0159",
+    "seed": 68491523,
+    "task_id": "op34_wan34_0159_s68491523",
+    "score": 60.38439663303298
+  },
+  {
+    "benchmark_id": "0160",
+    "seed": 43278311,
+    "task_id": "op34_wan34_0160_s43278311",
+    "score": 14.793023098904229
+  },
+  {
+    "benchmark_id": "0160",
+    "seed": 56382197,
+    "task_id": "op34_wan34_0160_s56382197",
+    "score": 9.019980299403713
+  },
+  {
+    "benchmark_id": "0160",
+    "seed": 68491523,
+    "task_id": "op34_wan34_0160_s68491523",
+    "score": 11.46847236189851
+  },
+  {
+    "benchmark_id": "0161",
+    "seed": 43278311,
+    "task_id": "op34_wan34_0161_s43278311",
+    "score": 10.921107416615246
+  },
+  {
+    "benchmark_id": "0161",
+    "seed": 56382197,
+    "task_id": "op34_wan34_0161_s56382197",
+    "score": 6.69121761872919
+  },
+  {
+    "benchmark_id": "0161",
+    "seed": 68491523,
+    "task_id": "op34_wan34_0161_s68491523",
+    "score": 6.100254245354419
+  },
+  {
+    "benchmark_id": "0166",
+    "seed": 43278311,
+    "task_id": "op34_wan34_0166_s43278311",
+    "score": 2.5086743739762363
+  },
+  {
+    "benchmark_id": "0166",
+    "seed": 56382197,
+    "task_id": "op34_wan34_0166_s56382197",
+    "score": 2.1143961960591926
+  },
+  {
+    "benchmark_id": "0166",
+    "seed": 68491523,
+    "task_id": "op34_wan34_0166_s68491523",
+    "score": 2.353356276442843
+  },
+  {
+    "benchmark_id": "0167",
+    "seed": 43278311,
+    "task_id": "op34_wan34_0167_s43278311",
+    "score": 2.1151326035714386
+  },
+  {
+    "benchmark_id": "0167",
+    "seed": 56382197,
+    "task_id": "op34_wan34_0167_s56382197",
+    "score": 0.7201149272393266
+  },
+  {
+    "benchmark_id": "0167",
+    "seed": 68491523,
+    "task_id": "op34_wan34_0167_s68491523",
+    "score": 10.58716164664031
+  },
+  {
+    "benchmark_id": "0168",
+    "seed": 43278311,
+    "task_id": "op34_wan34_0168_s43278311",
+    "score": 4.653621429854793
+  },
+  {
+    "benchmark_id": "0168",
+    "seed": 56382197,
+    "task_id": "op34_wan34_0168_s56382197",
+    "score": 5.811370221094807
+  },
+  {
+    "benchmark_id": "0168",
+    "seed": 68491523,
+    "task_id": "op34_wan34_0168_s68491523",
+    "score": 4.596109930244702
+  },
+  {
+    "benchmark_id": "0169",
+    "seed": 43278311,
+    "task_id": "op34_wan34_0169_s43278311",
+    "score": 48.16294939269138
+  },
+  {
+    "benchmark_id": "0169",
+    "seed": 56382197,
+    "task_id": "op34_wan34_0169_s56382197",
+    "score": 41.133209975018694
+  },
+  {
+    "benchmark_id": "0169",
+    "seed": 68491523,
+    "task_id": "op34_wan34_0169_s68491523",
+    "score": 28.828701413886254
+  },
+  {
+    "benchmark_id": "0170",
+    "seed": 43278311,
+    "task_id": "op34_wan34_0170_s43278311",
+    "score": 67.00292653330237
+  },
+  {
+    "benchmark_id": "0170",
+    "seed": 56382197,
+    "task_id": "op34_wan34_0170_s56382197",
+    "score": 45.65749481313068
+  },
+  {
+    "benchmark_id": "0170",
+    "seed": 68491523,
+    "task_id": "op34_wan34_0170_s68491523",
+    "score": 42.17038341432785
+  },
+  {
+    "benchmark_id": "0171",
+    "seed": 43278311,
+    "task_id": "op34_wan34_0171_s43278311",
+    "score": 46.41929667471919
+  },
+  {
+    "benchmark_id": "0171",
+    "seed": 56382197,
+    "task_id": "op34_wan34_0171_s56382197",
+    "score": 29.341338548112926
+  },
+  {
+    "benchmark_id": "0171",
+    "seed": 68491523,
+    "task_id": "op34_wan34_0171_s68491523",
+    "score": 42.85410338130722
+  },
+  {
+    "benchmark_id": "0175",
+    "seed": 43278311,
+    "task_id": "op34_wan34_0175_s43278311",
+    "score": 8.638379964515304
+  },
+  {
+    "benchmark_id": "0175",
+    "seed": 56382197,
+    "task_id": "op34_wan34_0175_s56382197",
+    "score": 0.2083462344758065
+  },
+  {
+    "benchmark_id": "0175",
+    "seed": 68491523,
+    "task_id": "op34_wan34_0175_s68491523",
+    "score": 11.726152429063879
+  },
+  {
+    "benchmark_id": "0176",
+    "seed": 43278311,
+    "task_id": "op34_wan34_0176_s43278311",
+    "score": 6.934791255313183
+  },
+  {
+    "benchmark_id": "0176",
+    "seed": 56382197,
+    "task_id": "op34_wan34_0176_s56382197",
+    "score": 0.3931811515440281
+  },
+  {
+    "benchmark_id": "0176",
+    "seed": 68491523,
+    "task_id": "op34_wan34_0176_s68491523",
+    "score": 9.629788169188814
+  },
+  {
+    "benchmark_id": "0177",
+    "seed": 43278311,
+    "task_id": "op34_wan34_0177_s43278311",
+    "score": 7.969553720210638
+  },
+  {
+    "benchmark_id": "0177",
+    "seed": 56382197,
+    "task_id": "op34_wan34_0177_s56382197",
+    "score": 2.3251179084141884
+  },
+  {
+    "benchmark_id": "0177",
+    "seed": 68491523,
+    "task_id": "op34_wan34_0177_s68491523",
+    "score": 2.5188377855761357
+  },
+  {
+    "benchmark_id": "0187",
+    "seed": 43278311,
+    "task_id": "op34_wan34_0187_s43278311",
+    "score": 66.51628787554186
+  },
+  {
+    "benchmark_id": "0187",
+    "seed": 56382197,
+    "task_id": "op34_wan34_0187_s56382197",
+    "score": 63.19481930097921
+  },
+  {
+    "benchmark_id": "0187",
+    "seed": 68491523,
+    "task_id": "op34_wan34_0187_s68491523",
+    "score": 59.06703947907411
+  },
+  {
+    "benchmark_id": "0189",
+    "seed": 43278311,
+    "task_id": "op34_wan34_0189_s43278311",
+    "score": 34.149906273629064
+  },
+  {
+    "benchmark_id": "0189",
+    "seed": 56382197,
+    "task_id": "op34_wan34_0189_s56382197",
+    "score": 38.94917504562973
+  },
+  {
+    "benchmark_id": "0189",
+    "seed": 68491523,
+    "task_id": "op34_wan34_0189_s68491523",
+    "score": 43.30962515588293
+  },
+  {
+    "benchmark_id": "0194",
+    "seed": 43278311,
+    "task_id": "op34_wan34_0194_s43278311",
+    "score": 24.398252395773174
+  },
+  {
+    "benchmark_id": "0194",
+    "seed": 56382197,
+    "task_id": "op34_wan34_0194_s56382197",
+    "score": 15.234831075818086
+  },
+  {
+    "benchmark_id": "0194",
+    "seed": 68491523,
+    "task_id": "op34_wan34_0194_s68491523",
+    "score": 16.672237941835427
+  },
+  {
+    "benchmark_id": "0195",
+    "seed": 43278311,
+    "task_id": "op34_wan34_0195_s43278311",
+    "score": 33.72271647450335
+  },
+  {
+    "benchmark_id": "0195",
+    "seed": 56382197,
+    "task_id": "op34_wan34_0195_s56382197",
+    "score": 13.661996774632712
+  },
+  {
+    "benchmark_id": "0195",
+    "seed": 68491523,
+    "task_id": "op34_wan34_0195_s68491523",
+    "score": 23.26129591665777
+  },
+  {
+    "benchmark_id": "0196",
+    "seed": 43278311,
+    "task_id": "op34_wan34_0196_s43278311",
+    "score": 26.90476762162995
+  },
+  {
+    "benchmark_id": "0196",
+    "seed": 56382197,
+    "task_id": "op34_wan34_0196_s56382197",
+    "score": 23.016479450636577
+  },
+  {
+    "benchmark_id": "0196",
+    "seed": 68491523,
+    "task_id": "op34_wan34_0196_s68491523",
+    "score": 25.998395118965757
+  }
+]

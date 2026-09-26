@@ -1,0 +1,250 @@
+[
+  {
+    "scene": "Kitchen lemon drop",
+    "parameter": "Restitution",
+    "sourceLevel": "High",
+    "targetLevel": "Low",
+    "frame": 22,
+    "arrowCenter": [
+      0.3499999999999999,
+      0.29777777777777775
+    ],
+    "arrowDirection": [
+      0,
+      1
+    ],
+    "folder": "archive/Documents/Codex/2026-09-20/users-az-desktop-fst-2026-9-2/tmp/figure7_review/appendix_v1/stage25__20_kitchen_lemon_low_drop__e__s42__high_to_low__slots_4_5",
+    "metrics": {
+      "task_id": "stage25__20_kitchen_lemon_low_drop__e__s42__high_to_low__slots_4_5",
+      "pair_id": "stage25__20_kitchen_lemon_low_drop__e__s42",
+      "axis": "e",
+      "scene": "20_kitchen_lemon_low_drop",
+      "seed": 42,
+      "source_level": "high",
+      "target_level": "low",
+      "slots": [
+        4,
+        5
+      ],
+      "gate_selection_rule": "first_actual_gate_any_block_ge_0.5",
+      "source_target_mse_post": 0.0026399854104965925,
+      "replacement_target_mse_post": 0.0004980145022273064,
+      "replacement_source_mse_post": 0.0026670496445149183,
+      "target_ratio_post": 0.18864290416240692,
+      "source_ratio_post": 1.0102516412734985,
+      "target_alignment_post": 0.8216087818145752,
+      "pre_change_mse": 0.00024640222545713186,
+      "replacement_video": "archive/evaluations/20260921_figure7_real_window_replace_v01/replacement/stage25__20_kitchen_lemon_low_drop__e__s42__high_to_low__slots_4_5/generated.mp4",
+      "sheet": "archive/evaluations/20260921_figure7_real_window_replace_v01/review_sheets/stage25__20_kitchen_lemon_low_drop__e__s42__high_to_low__slots_4_5.jpg"
+    },
+    "gate": {
+      "task_id": "stage25__20_kitchen_lemon_low_drop__e__s42__high_to_low__slots_4_5",
+      "pair_id": "stage25__20_kitchen_lemon_low_drop__e__s42",
+      "axis": "e",
+      "source_level": "high",
+      "pair_edge": [
+        0,
+        1
+      ],
+      "slots": [
+        4,
+        5
+      ],
+      "selection_rule": "first_actual_gate_any_block_ge_0.5",
+      "mean_gate": [
+        2.3199576389743015e-05,
+        0.0002825962146744132,
+        8.330965647473931e-05,
+        0.002027129055932164,
+        0.9982610940933228,
+        0.03819340839982033,
+        0.013585264794528484,
+        0.01274875644594431,
+        0.102695032954216
+      ],
+      "active_block_counts": [
+        0,
+        0,
+        0,
+        0,
+        8,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "display_crop": [
+      0,
+      8,
+      768,
+      440
+    ]
+  },
+  {
+    "scene": "Table tennis collision",
+    "parameter": "Restitution",
+    "sourceLevel": "Low",
+    "targetLevel": "High",
+    "frame": 32,
+    "arrowCenter": [
+      0.21875,
+      0.5185185185185185
+    ],
+    "arrowDirection": [
+      1,
+      0
+    ],
+    "folder": "archive/机器/figure_build/C_three_rows_car_v02_20260921/retry_review/pingpong_s2026_selected",
+    "metrics": {
+      "task_id": "pingpong_e_s2026__low_to_high__slots_3_4",
+      "pair_id": "pingpong_e_s2026",
+      "axis": "e",
+      "scene": "45_real_pingpong_close_collision",
+      "seed": 2026,
+      "source_level": "low",
+      "target_level": "high",
+      "slots": [
+        3,
+        4
+      ],
+      "gate_selection_rule": "first_actual_gate_any_block_ge_0.5",
+      "source_target_mse_post": 0.0029217987321317196,
+      "replacement_target_mse_post": 0.000111826928332448,
+      "replacement_source_mse_post": 0.0029108922462910414,
+      "target_ratio_post": 0.038273315876722336,
+      "source_ratio_post": 0.9962671995162964,
+      "target_alignment_post": 0.9579938650131226,
+      "pre_change_mse": 3.0190909455996007e-05,
+      "replacement_video": "archive/evaluations/20260921_C_car_collision_retry_v02/replacement/pingpong_e_s2026__low_to_high__slots_3_4/generated.mp4",
+      "sheet": "archive/evaluations/20260921_C_car_collision_retry_v02/review_sheets/pingpong_e_s2026__low_to_high__slots_3_4.jpg"
+    },
+    "gate": {
+      "task_id": "pingpong_e_s2026__low_to_high__slots_3_4",
+      "pair_id": "pingpong_e_s2026",
+      "axis": "e",
+      "source_level": "low",
+      "pair_edge": [
+        0,
+        1
+      ],
+      "slots": [
+        3,
+        4
+      ],
+      "selection_rule": "first_actual_gate_any_block_ge_0.5",
+      "mean_gate": [
+        4.912960321235005e-06,
+        0.00010229513281956315,
+        0.0005270768306218088,
+        0.9955534934997559,
+        0.9110312461853027,
+        0.0012671164004132152,
+        0.00046114137512631714,
+        0.0027850246988236904,
+        0.007342932745814323
+      ],
+      "active_block_counts": [
+        0,
+        0,
+        0,
+        8,
+        8,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "task_id": "pingpong_e_s2026__low_to_high__slots_3_4",
+    "display_crop": [
+      96,
+      40,
+      672,
+      364
+    ]
+  },
+  {
+    "scene": "Driveway toy van",
+    "parameter": "Friction",
+    "sourceLevel": "Low",
+    "targetLevel": "High",
+    "frame": 28,
+    "arrowCenter": [
+      0.8541666666666666,
+      0.25000000000000006
+    ],
+    "arrowDirection": [
+      -1,
+      0.36
+    ],
+    "folder": "archive/机器/figure_build/C_three_rows_car_v02_20260921/retry_review/C8_mu_s13003__low_to_high__slots_1_2",
+    "metrics": {
+      "task_id": "C8_mu_s13003__low_to_high__slots_1_2",
+      "pair_id": "C8_mu_s13003",
+      "axis": "mu",
+      "scene": "C8_driveway_toyvan",
+      "seed": 13003,
+      "source_level": "low",
+      "target_level": "high",
+      "slots": [
+        1,
+        2
+      ],
+      "gate_selection_rule": "first_actual_gate_any_block_ge_0.5",
+      "source_target_mse_post": 0.00288492813706398,
+      "replacement_target_mse_post": 0.0013215482467785478,
+      "replacement_source_mse_post": 0.002768944250419736,
+      "target_ratio_post": 0.4580870568752289,
+      "source_ratio_post": 0.9597966074943542,
+      "target_alignment_post": 0.5017095804214478,
+      "pre_change_mse": 4.470198473427445e-05,
+      "replacement_video": "archive/evaluations/20260921_C_car_collision_retry_v02/replacement/C8_mu_s13003__low_to_high__slots_1_2/generated.mp4",
+      "sheet": "archive/evaluations/20260921_C_car_collision_retry_v02/review_sheets/C8_mu_s13003__low_to_high__slots_1_2.jpg"
+    },
+    "gate": {
+      "task_id": "C8_mu_s13003__low_to_high__slots_1_2",
+      "pair_id": "C8_mu_s13003",
+      "axis": "mu",
+      "source_level": "low",
+      "pair_edge": [
+        0,
+        1
+      ],
+      "slots": [
+        1,
+        2
+      ],
+      "selection_rule": "first_actual_gate_any_block_ge_0.5",
+      "mean_gate": [
+        0.9999940395355225,
+        0.9999693632125854,
+        0.9999945163726807,
+        0.9999920129776001,
+        0.9999861717224121,
+        0.999883234500885,
+        0.9999443888664246,
+        0.9999504089355469,
+        0.9999886751174927
+      ],
+      "active_block_counts": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ]
+    },
+    "task_id": "C8_mu_s13003__low_to_high__slots_1_2",
+    "display_crop": [
+      0,
+      8,
+      768,
+      440
+    ]
+  }
+]

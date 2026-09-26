@@ -1,0 +1,547 @@
+[
+  {
+    "video": "archive/evaluations/20260921_figure7_real_window_replace_v01/replacement/stage25__20_kitchen_lemon_low_drop__e__s42__high_to_low__slots_4_5/generated.mp4",
+    "bytes": 402380,
+    "receipt": "archive/evaluations/20260921_figure7_real_window_replace_v01/replacement/stage25__20_kitchen_lemon_low_drop__e__s42__high_to_low__slots_4_5/COMPLETE.json",
+    "completion": {
+      "status": "complete",
+      "task": {
+        "task_id": "stage25__20_kitchen_lemon_low_drop__e__s42__high_to_low__slots_4_5",
+        "split": "demo_ood_natural_style_search",
+        "video": "archive/run-prep/20260921_natural_demo_v01/frames/20_kitchen_lemon_low_drop.png",
+        "condition_path": "archive/run-prep/20260921_natural_demo_v01/conditions/20_kitchen_lemon_low_drop_stage25_e1p0_s42.pt",
+        "h2_prompt": "One yellow lemon drops from midair onto the terracotta kitchen tile floor and bounces. The camera stays fixed.",
+        "text_prompt": "",
+        "seed": "42",
+        "fps": "16",
+        "scene": "20_kitchen_lemon_low_drop",
+        "family": "high_e_probe",
+        "axes": "e",
+        "values": "{\"e\": 1.0}",
+        "cfg_scale": "1.2",
+        "support_mode": "tile_floor_as_C17b_training_donor",
+        "pair_id": "stage25__20_kitchen_lemon_low_drop__e__s42",
+        "endpoint_level": "high",
+        "endpoint_value": "1.0",
+        "stage": "25",
+        "subset": "",
+        "scene_index": "",
+        "numeric_axis": "",
+        "numeric_level": "",
+        "numeric_value": "",
+        "generation_seed": "",
+        "prompt": "",
+        "axis": "",
+        "value": "",
+        "gravity": "",
+        "source_normal_task_id": "20_kitchen_lemon_low_drop_stage25_e1p0_s42",
+        "target_normal_task_id": "20_kitchen_lemon_low_drop_stage25_e0p1_s42",
+        "source_condition_path": "archive/run-prep/20260921_natural_demo_v01/conditions/20_kitchen_lemon_low_drop_stage25_e1p0_s42.pt",
+        "target_condition_path": "archive/run-prep/20260921_natural_demo_v01/conditions/20_kitchen_lemon_low_drop_stage25_e0p1_s42.pt",
+        "intervention_axis": "e",
+        "intervention_slots": "[4, 5]",
+        "object_count": "1",
+        "pair_edge": "[0, 1]",
+        "changed_objects": "[]",
+        "source_value_normalized": "1.0",
+        "target_value_normalized": "0.10000000149011612",
+        "source_level": "high",
+        "target_level": "low",
+        "gate_kind": "e",
+        "gate_selection_rule": "first_actual_gate_any_block_ge_0.5",
+        "source_normal_video": "archive/evaluations/20260921_figure7_real_window_replace_v01/normal/20_kitchen_lemon_low_drop_stage25_e1p0_s42/generated.mp4",
+        "target_normal_video": "archive/evaluations/20260921_figure7_real_window_replace_v01/normal/20_kitchen_lemon_low_drop_stage25_e0p1_s42/generated.mp4",
+        "source_gravity_json": "",
+        "target_gravity_json": ""
+      },
+      "intervention": {
+        "axis": "e",
+        "slots": [
+          4,
+          5
+        ],
+        "object_count": 1,
+        "pair_edge": [
+          0,
+          1
+        ],
+        "changed_objects": [],
+        "target_value": 0.10000000149011612,
+        "target_gravity": null
+      },
+      "receipts": {
+        "10": {
+          "axis": "e",
+          "slots": [
+            4,
+            5
+          ],
+          "pair_edge": [
+            0,
+            1
+          ],
+          "before_mean": 1.0,
+          "after": 0.10000000149011612
+        },
+        "11": {
+          "axis": "e",
+          "slots": [
+            4,
+            5
+          ],
+          "pair_edge": [
+            0,
+            1
+          ],
+          "before_mean": 1.0,
+          "after": 0.10000000149011612
+        },
+        "12": {
+          "axis": "e",
+          "slots": [
+            4,
+            5
+          ],
+          "pair_edge": [
+            0,
+            1
+          ],
+          "before_mean": 1.0,
+          "after": 0.10000000149011612
+        },
+        "13": {
+          "axis": "e",
+          "slots": [
+            4,
+            5
+          ],
+          "pair_edge": [
+            0,
+            1
+          ],
+          "before_mean": 1.0,
+          "after": 0.10000000149011612
+        },
+        "14": {
+          "axis": "e",
+          "slots": [
+            4,
+            5
+          ],
+          "pair_edge": [
+            0,
+            1
+          ],
+          "before_mean": 1.0,
+          "after": 0.10000000149011612
+        },
+        "15": {
+          "axis": "e",
+          "slots": [
+            4,
+            5
+          ],
+          "pair_edge": [
+            0,
+            1
+          ],
+          "before_mean": 1.0,
+          "after": 0.10000000149011612
+        },
+        "16": {
+          "axis": "e",
+          "slots": [
+            4,
+            5
+          ],
+          "pair_edge": [
+            0,
+            1
+          ],
+          "before_mean": 1.0,
+          "after": 0.10000000149011612
+        },
+        "17": {
+          "axis": "e",
+          "slots": [
+            4,
+            5
+          ],
+          "pair_edge": [
+            0,
+            1
+          ],
+          "before_mean": 1.0,
+          "after": 0.10000000149011612
+        }
+      },
+      "seconds": 19.950795650482178
+    }
+  },
+  {
+    "video": "archive/evaluations/20260921_C_car_collision_retry_v02/replacement/pingpong_e_s2026__low_to_high__slots_3_4/generated.mp4",
+    "bytes": 151465,
+    "receipt": "archive/evaluations/20260921_C_car_collision_retry_v02/replacement/pingpong_e_s2026__low_to_high__slots_3_4/COMPLETE.json",
+    "completion": {
+      "status": "complete",
+      "task": {
+        "task_id": "pingpong_e_s2026__low_to_high__slots_3_4",
+        "split": "demo_ood_natural_style_search",
+        "video": "archive/run-prep/20260921_natural_demo_v01/frames/45_real_pingpong_close_collision.png",
+        "condition_path": "archive/run-prep/20260921_natural_demo_v01/conditions/45_real_pingpong_close_collision_stage69_e0p1.pt",
+        "h2_prompt": "An orange ping-pong ball rolls right across a blue table and immediately strikes a nearby white ping-pong ball. Both balls remain rigid and round. The camera stays fixed.",
+        "text_prompt": "",
+        "seed": "2026",
+        "fps": "16",
+        "scene": "45_real_pingpong_close_collision",
+        "family": "real_near_id_pingpong_collision_e_five_high_F",
+        "axes": "e",
+        "values": "{\"e\": 0.1, \"F_fixed\": 750.0}",
+        "cfg_scale": "1.2",
+        "support_mode": "stage67_masks_C4_e_roles_fixed_high_F",
+        "pair_id": "pingpong_e_s2026",
+        "endpoint_level": "low",
+        "endpoint_value": "0.1",
+        "stage": "69",
+        "subset": "",
+        "scene_index": "",
+        "numeric_axis": "",
+        "numeric_level": "",
+        "numeric_value": "",
+        "generation_seed": "",
+        "prompt": "",
+        "axis": "",
+        "value": "",
+        "gravity": "",
+        "level": "",
+        "F_N": "",
+        "m_kg": "",
+        "g_ms2": "",
+        "e": "",
+        "mu": "",
+        "source_normal_task_id": "pingpong_e_low_s2026",
+        "target_normal_task_id": "pingpong_e_high_s2026",
+        "source_condition_path": "archive/run-prep/20260921_natural_demo_v01/conditions/45_real_pingpong_close_collision_stage69_e0p1.pt",
+        "target_condition_path": "archive/run-prep/20260921_natural_demo_v01/conditions/45_real_pingpong_close_collision_stage69_e0p9.pt",
+        "intervention_axis": "e",
+        "intervention_slots": "[3, 4]",
+        "object_count": "2",
+        "pair_edge": "[0, 1]",
+        "changed_objects": "[]",
+        "source_value_normalized": "0.010000000707805157",
+        "target_value_normalized": "0.809999942779541",
+        "source_level": "low",
+        "target_level": "high",
+        "gate_kind": "e",
+        "gate_selection_rule": "first_actual_gate_any_block_ge_0.5",
+        "source_normal_video": "archive/evaluations/20260921_C_car_collision_retry_v02/normal/pingpong_e_low_s2026/generated.mp4",
+        "target_normal_video": "archive/evaluations/20260921_C_car_collision_retry_v02/normal/pingpong_e_high_s2026/generated.mp4"
+      },
+      "intervention": {
+        "axis": "e",
+        "slots": [
+          3,
+          4
+        ],
+        "object_count": 2,
+        "pair_edge": [
+          0,
+          1
+        ],
+        "changed_objects": [],
+        "target_value": 0.809999942779541,
+        "target_gravity": null
+      },
+      "receipts": {
+        "10": {
+          "axis": "e",
+          "slots": [
+            3,
+            4
+          ],
+          "pair_edge": [
+            0,
+            1
+          ],
+          "before_mean": 0.010000000707805157,
+          "after": 0.809999942779541
+        },
+        "11": {
+          "axis": "e",
+          "slots": [
+            3,
+            4
+          ],
+          "pair_edge": [
+            0,
+            1
+          ],
+          "before_mean": 0.010000000707805157,
+          "after": 0.809999942779541
+        },
+        "12": {
+          "axis": "e",
+          "slots": [
+            3,
+            4
+          ],
+          "pair_edge": [
+            0,
+            1
+          ],
+          "before_mean": 0.010000000707805157,
+          "after": 0.809999942779541
+        },
+        "13": {
+          "axis": "e",
+          "slots": [
+            3,
+            4
+          ],
+          "pair_edge": [
+            0,
+            1
+          ],
+          "before_mean": 0.010000000707805157,
+          "after": 0.809999942779541
+        },
+        "14": {
+          "axis": "e",
+          "slots": [
+            3,
+            4
+          ],
+          "pair_edge": [
+            0,
+            1
+          ],
+          "before_mean": 0.010000000707805157,
+          "after": 0.809999942779541
+        },
+        "15": {
+          "axis": "e",
+          "slots": [
+            3,
+            4
+          ],
+          "pair_edge": [
+            0,
+            1
+          ],
+          "before_mean": 0.010000000707805157,
+          "after": 0.809999942779541
+        },
+        "16": {
+          "axis": "e",
+          "slots": [
+            3,
+            4
+          ],
+          "pair_edge": [
+            0,
+            1
+          ],
+          "before_mean": 0.010000000707805157,
+          "after": 0.809999942779541
+        },
+        "17": {
+          "axis": "e",
+          "slots": [
+            3,
+            4
+          ],
+          "pair_edge": [
+            0,
+            1
+          ],
+          "before_mean": 0.010000000707805157,
+          "after": 0.809999942779541
+        }
+      },
+      "seconds": 20.807222366333008
+    }
+  },
+  {
+    "video": "archive/evaluations/20260921_C_car_collision_retry_v02/replacement/C8_mu_s13003__low_to_high__slots_1_2/generated.mp4",
+    "bytes": 1633382,
+    "receipt": "archive/evaluations/20260921_C_car_collision_retry_v02/replacement/C8_mu_s13003__low_to_high__slots_1_2/COMPLETE.json",
+    "completion": {
+      "status": "complete",
+      "task": {
+        "task_id": "C8_mu_s13003__low_to_high__slots_1_2",
+        "split": "demo_id_geometry_style_search",
+        "video": "archive/run-prep/20260916_tennis_style_v01/inputs/C8_driveway_toyvan.png",
+        "condition_path": "archive/run-prep/20260919_teaser_left_fivelevel_v01/conditions/C8_driveway_toyvan_mu5_refined_L0.pt",
+        "h2_prompt": "A small red toy van rests on a gentle suburban driveway that slopes down to the left. It rolls downhill while the camera stays fixed.",
+        "text_prompt": "",
+        "seed": "13003",
+        "fps": "16",
+        "scene": "C8_driveway_toyvan",
+        "family": "real_world_ood_motion_primitive",
+        "axes": "",
+        "values": "",
+        "cfg_scale": "1.2",
+        "support_mode": "slope",
+        "pair_id": "C8_mu_s13003",
+        "endpoint_level": "low",
+        "endpoint_value": "0.04",
+        "stage": "",
+        "subset": "",
+        "scene_index": "",
+        "numeric_axis": "",
+        "numeric_level": "",
+        "numeric_value": "",
+        "generation_seed": "",
+        "prompt": "",
+        "axis": "mu",
+        "value": "0.04",
+        "gravity": "",
+        "level": "L0",
+        "F_N": "",
+        "m_kg": "5",
+        "g_ms2": "14.7",
+        "e": "",
+        "mu": "0.04",
+        "source_normal_task_id": "C8_mu_low_s13003",
+        "target_normal_task_id": "C8_mu_high_s13003",
+        "source_condition_path": "archive/run-prep/20260919_teaser_left_fivelevel_v01/conditions/C8_driveway_toyvan_mu5_refined_L0.pt",
+        "target_condition_path": "archive/run-prep/20260919_teaser_left_fivelevel_v01/conditions/C8_driveway_toyvan_mu5_refined_L4.pt",
+        "intervention_axis": "mu",
+        "intervention_slots": "[1, 2]",
+        "object_count": "1",
+        "pair_edge": "[0, 1]",
+        "changed_objects": "[]",
+        "source_value_normalized": "0.03999999910593033",
+        "target_value_normalized": "0.20000000298023224",
+        "source_level": "low",
+        "target_level": "high",
+        "gate_kind": "mu",
+        "gate_selection_rule": "first_actual_gate_any_block_ge_0.5",
+        "source_normal_video": "archive/evaluations/20260921_C_car_collision_retry_v02/normal/C8_mu_low_s13003/generated.mp4",
+        "target_normal_video": "archive/evaluations/20260921_C_car_collision_retry_v02/normal/C8_mu_high_s13003/generated.mp4"
+      },
+      "intervention": {
+        "axis": "mu",
+        "slots": [
+          1,
+          2
+        ],
+        "object_count": 1,
+        "pair_edge": [
+          0,
+          1
+        ],
+        "changed_objects": [],
+        "target_value": 0.20000000298023224,
+        "target_gravity": null
+      },
+      "receipts": {
+        "10": {
+          "axis": "mu",
+          "slots": [
+            1,
+            2
+          ],
+          "pair_edge": [
+            0,
+            1
+          ],
+          "before_mean": 0.03999999910593033,
+          "after": 0.20000000298023224
+        },
+        "11": {
+          "axis": "mu",
+          "slots": [
+            1,
+            2
+          ],
+          "pair_edge": [
+            0,
+            1
+          ],
+          "before_mean": 0.03999999910593033,
+          "after": 0.20000000298023224
+        },
+        "12": {
+          "axis": "mu",
+          "slots": [
+            1,
+            2
+          ],
+          "pair_edge": [
+            0,
+            1
+          ],
+          "before_mean": 0.03999999910593033,
+          "after": 0.20000000298023224
+        },
+        "13": {
+          "axis": "mu",
+          "slots": [
+            1,
+            2
+          ],
+          "pair_edge": [
+            0,
+            1
+          ],
+          "before_mean": 0.03999999910593033,
+          "after": 0.20000000298023224
+        },
+        "14": {
+          "axis": "mu",
+          "slots": [
+            1,
+            2
+          ],
+          "pair_edge": [
+            0,
+            1
+          ],
+          "before_mean": 0.03999999910593033,
+          "after": 0.20000000298023224
+        },
+        "15": {
+          "axis": "mu",
+          "slots": [
+            1,
+            2
+          ],
+          "pair_edge": [
+            0,
+            1
+          ],
+          "before_mean": 0.03999999910593033,
+          "after": 0.20000000298023224
+        },
+        "16": {
+          "axis": "mu",
+          "slots": [
+            1,
+            2
+          ],
+          "pair_edge": [
+            0,
+            1
+          ],
+          "before_mean": 0.03999999910593033,
+          "after": 0.20000000298023224
+        },
+        "17": {
+          "axis": "mu",
+          "slots": [
+            1,
+            2
+          ],
+          "pair_edge": [
+            0,
+            1
+          ],
+          "before_mean": 0.03999999910593033,
+          "after": 0.20000000298023224
+        }
+      },
+      "seconds": 19.75469207763672
+    }
+  }
+]

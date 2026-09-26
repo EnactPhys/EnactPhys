@@ -1,0 +1,10 @@
+The image shows sixteen complete video frames sampled uniformly in time and arranged as a 4x4 grid. Read left-to-right, top-to-bottom, t01 to t16. Decide only whether there is a CLEAR visual generation abnormality.
+
+FAIL for direct visible evidence of: a large colorful wave/ring or abstract structure; unexplained particles, lines, shards or debris; human/hand/body intrusion; a coherent new object appearing from nowhere; two complete copies of one target simultaneously visible in the same tile; a rigid target persistently breaking, melting, shrinking, stretching or deforming; persistent identity/color/material mutation; persistent background/support mutation or a global camera jump; an abnormal translucent afterimage within one tile; a true in-view disappearance; or unmistakable rigid-body penetration.
+
+PASS when no such defect is directly visible. Different tiles are different times, so different positions across tiles are never duplication. Because the frames are sparse samples, later absence alone is not proof of disappearance: normal motion toward and beyond a local image border is PASS even if the exact crossing instant was not sampled. Contact, resting on a surface, partial occlusion by an edge, perspective overlap, and one ambiguous overlap are not penetration. Normal motion, collision, bounce, rotation, lighting, shadow, reflection, compression and ordinary motion blur are PASS. Do not judge force magnitude, friction, gravity, restitution, speed, trajectory, timing or control accuracy.
+
+Choose the single most decisive issue_type from: wave_or_abstract, particles_or_debris, human_intrusion, new_object, duplication, deformation, identity_change, scene_or_camera_change, abnormal_afterimage, disappearance, penetration, none, uncertain. Use FAIL only for decisive visible evidence; otherwise PASS.
+
+Return JSON only:
+{"label":"PASS|FAIL|UNCERTAIN","issue_type":"one value from the list","evidence":"one short sentence naming the visible evidence and tile numbers"}

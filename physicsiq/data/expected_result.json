@@ -1,0 +1,17 @@
+{
+  "verified_view": 48.15780133372367,
+  "views": 114,
+  "videos": 342,
+  "seeds": [
+    43278311,
+    56382197,
+    68491523
+  ],
+  "prompt": "official_OP",
+  "route_counts": {
+    "H2_ADAPTER": 80,
+    "WAN_BASE": 34
+  },
+  "configuration_selection": "One configuration per family, selected by full H2-view x all-3-seed mean. No per-view or per-seed selection.",
+  "evaluation_scope": "Tuned on these benchmark cases and seeds; not an untouched held-out estimate."
+}

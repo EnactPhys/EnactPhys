@@ -1,0 +1,36 @@
+% Required packages: booktabs, amssymb, graphicx, multirow.
+\par\noindent\begin{minipage}{\linewidth}
+\makeatletter\def\@captype{table}\makeatother
+\centering
+\caption{Ablation of object-state modeling and interaction structure on PhysDelta-Sim and PhysDelta-Real. Higher is better.}
+\label{tab:architecture_ablation}
+\setlength{\tabcolsep}{3.3pt}
+\renewcommand{\arraystretch}{1.0}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lcccccc@{}}
+\toprule
+\multirow{2}{*}{\textbf{Variant}}
+& \multirow{2}{*}{\shortstack[c]{\textbf{Object-State}\\\textbf{Modeling}}}
+& \multirow{2}{*}{\shortstack[c]{\textbf{State}\\\textbf{Interaction}}}
+& \multicolumn{2}{c}{\textbf{PhysDelta-Sim}}
+& \multicolumn{2}{c}{\textbf{PhysDelta-Real}} \\
+\cmidrule(lr){4-5}\cmidrule(lr){6-7}
+& &
+& \shortstack[c]{\textbf{Parameter}\\\textbf{Control}$\uparrow$}
+& \shortstack[c]{\textbf{Object}\\\textbf{Control}$\uparrow$}
+& \shortstack[c]{\textbf{Parameter}\\\textbf{Control}$\uparrow$}
+& \shortstack[c]{\textbf{Object}\\\textbf{Control}$\uparrow$} \\
+\midrule
+Wan (Text-only) & $\times$ & \textemdash & 25.76 & 27.39 & 46.75 & 26.57 \\
+Wan (ControlNet) & $\times$ & \textemdash & 47.05 & 56.90 & 60.73 & 65.83 \\
+\midrule
+State Modeling Only & $\checkmark$ & None & 45.06 & 36.43 & 73.31 & 41.90 \\
+All-to-All State Attention & $\checkmark$ & All-to-all & 47.71 & 42.03 & 79.52 & 49.09 \\
+\midrule
+\textbf{EnactPhys} & $\checkmark$ & Structured & \textbf{56.91} & \textbf{72.64} & \textbf{85.59} & \textbf{90.65} \\
+\quad w/o Temporal Evolution & $\checkmark$ & Inter-object only & 54.34 & 48.29 & 77.40 & 56.02 \\
+\quad w/o Inter-object Interaction & $\checkmark$ & Temporal only & 49.40 & 53.84 & 77.68 & 45.78 \\
+\bottomrule
+\end{tabular}%
+}
+\end{minipage}\par

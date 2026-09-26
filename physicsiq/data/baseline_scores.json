@@ -1,0 +1,130 @@
+{
+  "wan_base": {
+    "per_seed": [
+      {
+        "seed": 43278311,
+        "verified_view": 32.41058051502835
+      },
+      {
+        "seed": 56382197,
+        "verified_view": 32.55806057023157
+      },
+      {
+        "seed": 68491523,
+        "verified_view": 31.91853169037739
+      }
+    ]
+  },
+  "cogvideo": {
+    "per_seed": [
+      {
+        "seed": 43278311,
+        "verified_view": 36.15574509854084
+      },
+      {
+        "seed": 56382197,
+        "verified_view": 33.31405051981478
+      },
+      {
+        "seed": 68491523,
+        "verified_view": 32.8400849232583
+      }
+    ]
+  },
+  "h3": {
+    "per_seed": [
+      {
+        "seed": 43278311,
+        "verified_view": 41.99199854861585
+      },
+      {
+        "seed": 56382197,
+        "verified_view": 44.47888330118121
+      },
+      {
+        "seed": 68491523,
+        "verified_view": 42.48642285569013
+      }
+    ]
+  },
+  "phantom": {
+    "per_seed": [
+      {
+        "seed": 43278311,
+        "verified_view": 48.52042185231182
+      },
+      {
+        "seed": 56382197,
+        "verified_view": 45.46080423802309
+      },
+      {
+        "seed": 68491523,
+        "verified_view": 44.66923541983696
+      }
+    ]
+  },
+  "textonly": {
+    "per_seed": [
+      {
+        "seed": 43278311,
+        "verified_view": 37.736885573594485
+      },
+      {
+        "seed": 56382197,
+        "verified_view": 34.4099678731487
+      },
+      {
+        "seed": 68491523,
+        "verified_view": 35.12434616432326
+      }
+    ]
+  },
+  "controlnet": {
+    "per_seed": [
+      {
+        "seed": 43278311,
+        "verified_view": 45.88636932193887
+      },
+      {
+        "seed": 56382197,
+        "verified_view": 43.91458569644821
+      },
+      {
+        "seed": 68491523,
+        "verified_view": 46.04843747009402
+      }
+    ]
+  },
+  "force_prompting": {
+    "per_seed": [
+      {
+        "seed": 43278311,
+        "verified_view": 36.1705189076876
+      },
+      {
+        "seed": 56382197,
+        "verified_view": 33.922849416030445
+      },
+      {
+        "seed": 68491523,
+        "verified_view": 34.41762289953776
+      }
+    ]
+  },
+  "official_phyco": {
+    "per_seed": [
+      {
+        "seed": 43278311,
+        "verified_view": 44.52647404851731
+      },
+      {
+        "seed": 56382197,
+        "verified_view": 44.3344122836346
+      },
+      {
+        "seed": 68491523,
+        "verified_view": 45.73756155523818
+      }
+    ]
+  }
+}

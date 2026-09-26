@@ -1,0 +1,78 @@
+% Required packages: booktabs, multirow, graphicx
+% PhysDelta values are Sim / Real, independently ranked on each side.
+% Physics-IQ: Solid Mechanics, Verified Score; 114 views x 3 seeds.
+% MORPHEUS source: completed v66, 16 cases x 3 development seeds;
+% details in external protocol record.
+\begin{table*}[t]
+\centering
+\caption{Comparison on PhysDelta, Physics-IQ (Solid Mechanics), and MORPHEUS.}
+\label{tab:main_benchmark}
+\setlength{\tabcolsep}{3.8pt}
+\renewcommand{\arraystretch}{1.10}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}llcccc@{\hspace{10pt}}c@{\hspace{10pt}}cc@{}}
+\toprule
+\multicolumn{1}{@{}c}{\multirow[c]{2}{*}[-0.8em]{\shortstack[c]{\textbf{Control}\\\textbf{Paradigm}}}}
+& \multicolumn{1}{c}{\multirow[c]{2}{*}[-0.8em]{\textbf{Models}}}
+& \multicolumn{4}{c}{\textbf{PhysDelta-Sim / Real}}
+& \textbf{Physics-IQ}
+& \multicolumn{2}{c}{\textbf{MORPHEUS}} \\
+\cmidrule(lr){3-6}\cmidrule(lr){7-7}\cmidrule(lr){8-9}
+&
+& \shortstack[c]{\textbf{Video}\\\textbf{Quality}$\uparrow$}
+& \shortstack[c]{\textbf{Physical}\\\textbf{Plausibility}$\uparrow$}
+& \shortstack[c]{\textbf{Parameter}\\\textbf{Control}$\uparrow$}
+& \shortstack[c]{\textbf{Object}\\\textbf{Control}$\uparrow$}
+& \shortstack[c]{\textbf{Verified}\\\textbf{Score}$\uparrow$}
+& \shortstack[c]{\textbf{Dynamical}\\\textbf{Score}$\uparrow$}
+& \shortstack[c]{\textbf{Invariance}\\\textbf{Score}$\uparrow$} \\
+\midrule
+\multirow[c]{3}{*}{General-purpose}
+& Wan2.2-TI2V-5B
+& 77.16\,/\,77.02 & 39.53\,/\,41.00
+& 11.15\,/\,15.25 & 2.76\,/\,1.40
+& 32.30 & 0.4515 & 0.4569 \\
+& CogVideoX-5B-I2V
+& 70.10\,/\,72.31 & 66.98\,/\,48.00
+& 15.96\,/\,38.98 & 12.38\,/\,22.76
+& 34.10 & 0.5170 & 0.5072 \\
+& MiniMax H3
+& 76.83\,/\,75.75 & 89.77\,/\,68.00
+& 16.83\,/\,31.64 & 13.92\,/\,11.40
+& 42.99 & \textbf{0.8286} & \underline{0.7035} \\
+\midrule
+Latent physics control & Phantom
+& \textbf{79.84}\,/\,\underline{78.75}
+& 92.56\,/\,86.00
+& \underline{48.00}\,/\,\underline{74.44}
+& 24.54\,/\,28.20
+& \underline{46.22} & 0.6415 & 0.6213 \\
+\midrule
+\multirow[c]{4}{*}{\shortstack[l]{Explicit physics\\control}}
+& Wan (Text-only)
+& 78.72\,/\,78.20 & \textbf{96.74}\,/\,95.00
+& 25.76\,/\,46.75 & 27.39\,/\,26.57
+& 35.76 & 0.3915 & 0.4334 \\
+& Wan (ControlNet)
+& 79.21\,/\,78.50 & 92.56\,/\,96.00
+& 47.05\,/\,60.73 & \underline{56.90}\,/\,\underline{65.83}
+& 45.28 & 0.5511 & 0.5955 \\
+& Force Prompting
+& 70.13\,/\,70.30 & 87.91\,/\,63.00
+& 18.24\,/\,45.90 & 9.48\,/\,16.05
+& 34.84 & 0.5410 & 0.5136 \\
+& PhyCo
+& 67.88\,/\,70.56 & \underline{94.42}\,/\,\textbf{98.00}
+& 13.84\,/\,25.71 & 15.59\,/\,13.39
+& 44.87 & 0.4425 & 0.6422 \\
+\midrule
+\textbf{Ours} & \textbf{EnactPhys}
+& \underline{79.56}\,/\,\textbf{79.18}
+& \textbf{96.74}\,/\,\underline{97.00}
+& \textbf{56.91}\,/\,\textbf{85.59}
+& \textbf{72.64}\,/\,\textbf{90.65}
+& \textbf{48.16} & \underline{0.6781} & \textbf{0.7111} \\
+\bottomrule
+\end{tabular}%
+}
+\end{table*}
