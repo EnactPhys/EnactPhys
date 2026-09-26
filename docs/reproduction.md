@@ -91,3 +91,20 @@ joins supplied decisions to raw scores without dropping samples.
 
 Pixel-scoring commands for VQA and PP are described in the
 [video evaluation guide](video_evaluation.md).
+
+## PhysDelta generation
+
+The [dataset release](https://huggingface.co/datasets/EnactPhys/PhysDelta) includes all 3,519 formal benchmark task inputs, plus six separately listed friction diagnostics. Extract both input archives under one dataset root. `scripts/generate_physdelta.py` validates task IDs and all selected image, condition and tracking-mask paths before generation.
+
+Supported tracks are `sim/parameter_control`, `sim/invariance`, `sim/object_control`, `real/parameter_control`, `real/object_control`, and `real/friction_diagnostic`. The last track is not included in the formal object-control result.
+
+The EnactPhys entry point uses the released step-6000 checkpoint, MLP mass encoder, injection blocks 10–17, CFG 1.2, 30 sampling steps, sigma shift 5.0, and 49 frames at 768 × 448. Output frame rate follows each manifest. Measurement readers use their specified time basis, which need not equal the display frame rate.
+
+```bash
+python scripts/generate_physdelta.py --dataset data/PhysDelta \
+  --track sim/parameter_control --seed 42 \
+  --base-model weights/Wan2.2-TI2V-5B --checkpoint weights/enactphys \
+  --output-dir outputs/physdelta_sim --dry-run
+```
+
+Remove `--dry-run` to execute. This is the EnactPhys configuration; baseline and ablation methods require their own implementation and settings. The published-input check does not certify a fresh GPU run or a complete regenerated table.

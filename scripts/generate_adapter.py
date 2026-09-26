@@ -39,7 +39,7 @@ def main():
         rows = list(csv.DictReader(f))[args.shard_index::args.shard_count]
     if not rows:
         return
-    assert all(r["split"] == "PhysDelta2010_subset" for r in rows)
+    assert all(r["split"] in {"PhysDelta2010_subset", "PhysDelta"} for r in rows)
     args.output_root.mkdir(parents=True, exist_ok=True)
     h2 = args.architecture == "h2_mass"
     os.environ.update(PHYSICAL_WM_OBJECT_MASS="1", PHYSICAL_WM_MASS_ENCODER=args.mass_encoder, PHYSICAL_WM_THREE_CONTACT_GATES="1",

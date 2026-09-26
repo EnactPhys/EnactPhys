@@ -11,7 +11,7 @@
 
 EnactPhys controls generated object motion through evolving object states and parameter-conditioned interactions. Given an initial frame, object masks and physical parameters, it updates object states and writes their information into video diffusion. PhysDelta evaluates the response of target and non-target objects to physical interventions.
 
-> Initial code release. Recorded-measurement aggregation is available for the main and ablation tables. Checkpoint and benchmark asset uploads are in preparation; full video-to-table execution of this release package has not yet been validated.
+> Initial code release. Recorded-measurement aggregation is available for the main and ablation tables. Eight checkpoints and complete PhysDelta benchmark inputs are available; full video-to-table execution of this release package has not yet been validated.
 
 ## Method
 
@@ -28,8 +28,8 @@ The [project page](https://enactphys.github.io/) presents selected examples of g
 | --- | --- | --- |
 | [Project page](https://enactphys.github.io/) | Selected videos and state visualizations | Available |
 | [GitHub code](https://github.com/EnactPhys/EnactPhys) | Implementation, configurations and reproduction commands | Available |
-| Hugging Face model | Checkpoints and loading configuration | Pending |
-| Hugging Face dataset | PhysDelta inputs, conditions, splits and references | Pending |
+| [Hugging Face model](https://huggingface.co/EnactPhys/EnactPhys) | Eight checkpoints and loading configuration | Available |
+| [Hugging Face dataset](https://huggingface.co/datasets/EnactPhys/PhysDelta) | 3,519 benchmark tasks, initial images, conditions and tracking masks | Available |
 
 See [resource organization](docs/resources.md) for training data and optional evaluation-output archives. Third-party base models are obtained from their original distributors.
 
@@ -44,6 +44,23 @@ python -m pip install -r physicsiq/requirements.txt
 The GPU runtime specifies Python 3.10, PyTorch 2.7.0, torchvision 0.22.0 and CUDA 12.8 PyTorch builds. Dependencies are listed in [requirements-runtime.txt](requirements-runtime.txt). Clean-environment installation and end-to-end GPU execution of this package are pending validation.
 
 ## Inference
+
+Download the EnactPhys adapter and PhysDelta benchmark inputs:
+
+```bash
+hf download EnactPhys/EnactPhys --include 'enactphys/*' --local-dir weights
+hf download EnactPhys/PhysDelta --repo-type dataset --local-dir data/PhysDelta
+tar -xzf data/PhysDelta/sim_inputs.tar.gz -C data/PhysDelta
+tar -xzf data/PhysDelta/real_inputs.tar.gz -C data/PhysDelta
+python scripts/generate_physdelta.py --dataset data/PhysDelta \
+  --track real/parameter_control --seed 3407 \
+  --base-model weights/Wan2.2-TI2V-5B --checkpoint weights/enactphys \
+  --output-dir outputs/physdelta_real --dry-run
+```
+
+Remove `--dry-run` to run inference. Use `--task-id` for one task or `--shard-index` and `--shard-count` to divide tasks across GPU processes. `--dry-run` checks every selected input path without running the model. See [PhysDelta generation](docs/reproduction.md#physdelta-generation) for the track list and sampling settings.
+
+### Physics-IQ
 
 The included generation entry point reads fixed Physics-IQ task manifests. Prepare the Wan2.2-TI2V-5B base model, input images and conditions, and the step-6000 adapter for adapter-enabled tasks. The base-model directory contains the DiT shards, T5 encoder, VAE and tokenizer.
 
