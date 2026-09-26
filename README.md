@@ -5,51 +5,43 @@
 
 **Anonymous Authors**
 
-[Project page](https://enactphys.github.io/) · [Setup](#setup) · [Inference](#inference) · [Evaluation](#evaluation) · [Reproduction guide](docs/reproduction.md)
+[Website](https://enactphys.github.io/) · [Checkpoints](https://huggingface.co/EnactPhys/EnactPhys) · [Dataset](https://huggingface.co/datasets/EnactPhys/PhysDelta) · [Reproduction](docs/reproduction.md)
 
 </div>
 
-EnactPhys controls generated object motion through evolving object states and parameter-conditioned interactions. Given an initial frame, object masks and physical parameters, it updates object states and writes their information into video diffusion. PhysDelta evaluates the response of target and non-target objects to physical interventions.
+EnactPhys controls video generation through evolving object states and physical interactions. Given an initial frame, object masks and physical parameters, it reads object information from video features, evolves and exchanges object states, and writes them back into the video diffusion model. PhysDelta measures how target and non-target objects respond to physical interventions.
 
-> Initial code release. Recorded-measurement aggregation is available for the main and ablation tables. Eight checkpoints and PhysDelta control and quality-evaluation inputs are available; full video-to-table execution of this release package has not yet been validated.
-
-## Method
-
-- **Read:** extract object-specific information from video features.
-- **Evolve:** update object states over time with force, gravity and mass conditioning.
-- **Interact:** exchange messages between objects and support surfaces, conditioned on friction and restitution.
-- **Write:** inject updated object-state information into video features during denoising.
-
-The [project page](https://enactphys.github.io/) presents selected examples of generalization to human motion, single-parameter control, joint control and composed events.
+The [project website](https://enactphys.github.io/) presents the architecture, single-parameter and joint control, generalization examples and composed events.
 
 ## Resources
 
-| Resource | Contents | Status |
-| --- | --- | --- |
-| [Project page](https://enactphys.github.io/) | Selected videos and state visualizations | Available |
-| [GitHub code](https://github.com/EnactPhys/EnactPhys) | Implementation, configurations and reproduction commands | Available |
-| [Hugging Face model](https://huggingface.co/EnactPhys/EnactPhys) | Eight checkpoints and loading configuration | Available |
-| [Hugging Face dataset](https://huggingface.co/datasets/EnactPhys/PhysDelta) | 3,612 evaluation task inputs, plus six separate diagnostics | Available |
+| Repository | Contents |
+| --- | --- |
+| **This repository** | Model implementation, training and inference configurations, evaluators and table aggregation |
+| [**Model**](https://huggingface.co/EnactPhys/EnactPhys) | Eight step-6000 checkpoints and loading metadata |
+| [**Dataset**](https://huggingface.co/datasets/EnactPhys/PhysDelta) | PhysDelta inputs, fixed Physics-IQ inputs, raw training videos, conditions and split manifests |
 
-See [resource organization](docs/resources.md) for training data and optional evaluation-output archives. Third-party base models are obtained from their original distributors.
+Benchmark inputs and training data have separate downloads. Training-file availability is recorded in the dataset's [shard index](https://huggingface.co/datasets/EnactPhys/PhysDelta/blob/main/training_raw/index.json).
 
 ## Setup
 
-Recorded table, Physics-IQ and mechanism aggregation use the Python standard library. Recomputing baseline Physics-IQ scores from metric CSVs additionally requires:
+Use Python 3.10 for the model runtime. Install the matching PyTorch CUDA build and runtime dependencies:
 
 ```bash
-python -m pip install -r physicsiq/requirements.txt
+python -m pip install torch==2.7.0 torchvision==0.22.0 --index-url https://download.pytorch.org/whl/cu128
+python -m pip install -r requirements-runtime.txt
+python -m pip install huggingface_hub
+hf download Wan-AI/Wan2.2-TI2V-5B --local-dir weights/Wan2.2-TI2V-5B
+hf download EnactPhys/EnactPhys --include 'enactphys/*' --local-dir weights
 ```
 
-The GPU runtime specifies Python 3.10, PyTorch 2.7.0, torchvision 0.22.0 and CUDA 12.8 PyTorch builds. Dependencies are listed in [requirements-runtime.txt](requirements-runtime.txt). Clean-environment installation and end-to-end GPU execution of this package are pending validation.
+The released files contain trainable parameters. Keep `trainable_model.safetensors` and `complete.json` together in `weights/enactphys/`; base-model weights are downloaded separately. EnactPhys uses the MLP mass encoder and injection blocks 10–17.
 
-## Inference
-
-Download the EnactPhys adapter and PhysDelta benchmark inputs:
+## Generate PhysDelta videos
 
 ```bash
-hf download EnactPhys/EnactPhys --include 'enactphys/*' --local-dir weights
-hf download EnactPhys/PhysDelta --repo-type dataset --exclude 'training/*' 'training_raw/*' 'training_sources/*' --local-dir data/PhysDelta
+hf download EnactPhys/PhysDelta --repo-type dataset \
+  --exclude 'training/*' 'training_raw/*' 'training_sources/*' --local-dir data/PhysDelta
 tar -xzf data/PhysDelta/sim_inputs.tar.gz -C data/PhysDelta
 tar -xzf data/PhysDelta/real_inputs.tar.gz -C data/PhysDelta
 python scripts/generate_physdelta.py --dataset data/PhysDelta \
@@ -58,63 +50,44 @@ python scripts/generate_physdelta.py --dataset data/PhysDelta \
   --output-dir outputs/physdelta_real --dry-run
 ```
 
-Remove `--dry-run` to run inference. Use `--task-id` for one task or `--shard-index` and `--shard-count` to divide tasks across GPU processes. `--dry-run` checks every selected input path without running the model. See [PhysDelta generation](docs/reproduction.md#physdelta-generation) for the track list and sampling settings.
-
-### Physics-IQ
-
-[Single-command generation and video scoring](docs/physicsiq_video_reproduction.md) includes the fixed input download and official reference-data setup.
-
-The included generation entry point reads fixed Physics-IQ task manifests. Prepare the Wan2.2-TI2V-5B base model, input images and conditions, and the step-6000 adapter for adapter-enabled tasks. The base-model directory contains the DiT shards, T5 encoder, VAE and tokenizer.
-
-Inspect one task:
-
-```bash
-python scripts/generate.py --route adapter --assets-root data --base-model weights/Wan2.2-TI2V-5B --checkpoint weights/enactphys --output-dir outputs/example --benchmark-id 0001 --seed 43278311 --dry-run
-```
-
-Remove `--dry-run` to execute on a compatible GPU once the assets are available. `--route base` selects tasks with the adapter disabled. Omit the view and seed filters to run all tasks in the selected route. See [generation instructions](docs/reproduction.md#generation) and [evaluation configurations](docs/protocol.md#physics-iq).
+Remove `--dry-run` to generate videos. Use `--task-id` for one task or `--shard-index` and `--shard-count` for parallel processes. See the [track list and sampling settings](docs/reproduction.md#physdelta-generation).
 
 ## Evaluation
 
-List the available workflows:
+| Workflow | Guide |
+| --- | --- |
+| PhysDelta-Real parameter control: generation → tracking → score | [Single-command workflow](docs/video_evaluation.md#single-command-real-pc-workflow) |
+| Physics-IQ Solid Mechanics: generation → video metrics → score | [Single-command workflow](docs/physicsiq_video_reproduction.md) |
+| Video Quality and Physical Plausibility | [Video evaluators](docs/video_evaluation.md) |
+| MORPHEUS screening and score aggregation | [Screening protocol](docs/morpheus_screening.md) |
+| Main table, ablations and object-state measurements | [Recorded measurement aggregation](docs/reproduction.md#recorded-measurements) |
+
+To aggregate the released measurements:
 
 ```bash
 python scripts/reproduce.py --list
+python scripts/reproduce.py --task main-table-recorded --out-dir outputs/main_table
+python scripts/reproduce.py --task ablation-recorded --out-dir outputs/ablation
 ```
 
-Aggregate a selected set of recorded measurements:
+These commands check the 99 main-table values and 28 ablation values against the released records. They aggregate measurements and judgments; generating new videos and extracting new scores use the separate video workflows above. Physics-IQ uses 114 views and three seeds, with the fixed adapter/base routing in its manifests. [Protocol details](docs/protocol.md) specify the metric definitions and evaluation settings.
+
+The [reproduction guide](docs/reproduction.md) states the scope of each executable workflow. A full fresh GPU rerun of the release package is distinct from these recorded-data checks.
+
+## Raw training data and preprocessing
+
+The data split contains **109,800 training rows** and **4,196 validation rows**. Download raw videos, physical-condition tensors and manifests with:
 
 ```bash
-python scripts/reproduce.py --task main-table-recorded --out-dir outputs/recorded_table
-python scripts/reproduce.py --task ablation-recorded --out-dir outputs/recorded_ablation
-python scripts/reproduce.py --task physicsiq-recorded --out-dir outputs/recorded_physicsiq
-python scripts/reproduce.py --task morpheus-recorded --out-dir outputs/recorded_morpheus
-python scripts/reproduce.py --task mechanisms-recorded --out-dir outputs/recorded_mechanisms
+python scripts/prepare_training_data.py --download \
+  --download-dir data/PhysDelta --output data/training_raw
 ```
 
-These commands compute aggregates from included measurements, evaluator means and judgments. The current Physics-IQ records aggregate to 48.16. New-video generation and pixel-level scoring are separate operations. The main-table command includes both MORPHEUS columns and checks all 99 displayed values against the approved table. See [workflow coverage](docs/reproduction.md) and [metric definitions](docs/protocol.md).
+This command extracts the available shards and checks every video and condition reference. It stops if coverage is incomplete. Additional source archives and their mappings are described in the [dataset card](https://huggingface.co/datasets/EnactPhys/PhysDelta). Previously uploaded optional encoding caches are separate and are not part of this download.
 
-## Training
+[The preprocessing guide](docs/training_data.md) explains video encoding, prompt selection and binding generated caches to the training configuration. VAE and text features can be computed with the provided scripts.
 
-The [raw training-data release](https://huggingface.co/datasets/EnactPhys/PhysDelta/tree/main/training_raw) contains original located videos, physical conditions and fixed train/validation manifests. The dataset's `training_raw/index.json` records shard availability and original-video coverage. Previously uploaded encoding caches are optional and incomplete.
-
-Download, extract and check all required inputs with:
-
-```bash
-python scripts/prepare_training_data.py --download --output data/training_raw
-```
-
-The command stops with a coverage report if any required input is unavailable. To encode a resolved raw-data manifest on a GPU, use the released Wan preprocessing path (49 frames, 768 × 448, padding, seed 42):
-
-```bash
-python scripts/preprocess_training.py --manifest data/training_raw/train.csv \
-  --data-root data/training_raw --model-root weights/Wan2.2-TI2V-5B \
-  --output data/encoded/train --prompt-column neutral_prompt
-```
-
-`--prompt-column` is explicit: select the prompt field required by the training route. `text_prompt` contains numeric text controls; `neutral_prompt` contains scene descriptions. The encoder supports `--shard-index` and `--shard-count`; each shard must use a separate output directory. It writes a clip-to-cache index. Physical conditions remain in the raw dataset. Reencoding and historical prompt-context equivalence have not yet been validated across the complete corpus; these preparation tools do not establish an exact retraining reproduction.
-
-[configs/train_enactphys.json](configs/train_enactphys.json) specifies 16 GPUs across two nodes, batch size 2 per rank, 6,000 steps, seed 42 and validation every 1,000 steps. Set model, data, output and rendezvous paths after preparing the training caches and conditions.
+[configs/train_enactphys.json](configs/train_enactphys.json) specifies 16 GPUs across two nodes, batch size 2 per rank, 6,000 steps, seed 42 and validation every 1,000 steps. Set data, model, output and rendezvous paths before launching:
 
 ```bash
 # Run on each node with its corresponding rank.
@@ -122,23 +95,19 @@ python scripts/train.py --config configs/train_enactphys.json --node-rank 0
 python scripts/train.py --config configs/train_enactphys.json --node-rank 1
 ```
 
-## Repository structure
+## Structure
 
 ```text
-configs/                 Training and runtime configuration
-docs/                    Protocol, resources and reproduction guide
-licenses/                Third-party license notices
-physicsiq/               Task manifests and metric aggregation
+configs/                 Training configurations
+runtime/                 Inference and training implementations
+evaluation/              Video measurements and scoring
+physicsiq/               Fixed tasks and Physics-IQ scoring implementation
 results/                 Recorded benchmark and mechanism measurements
-runtime/inference/       Inference implementation
-runtime/training/        Training implementation
-scripts/                 Generation, training and aggregation entry points
-requirements-runtime.txt Runtime dependencies
+scripts/                 Command-line entry points
+docs/                    Protocols and reproduction instructions
+licenses/                Third-party notices
 ```
 
 ## Licenses
 
-Included DiffSynth source retains its Apache-2.0 license under [licenses](licenses/). Physics-IQ scoring source retains its license under [physicsiq/vendor](physicsiq/vendor/). Third-party models and datasets retain their original licenses and attribution. A project-specific license for EnactPhys code, checkpoints and datasets has not yet been assigned.
-
-Pixel-scoring commands for VQA and PP are described in the
-[video evaluation guide](docs/video_evaluation.md).
+Third-party code, pretrained models and datasets retain their original licenses and attribution. Included DiffSynth and Physics-IQ license notices are retained in the repository. A project-specific license for EnactPhys code, checkpoints and data has not yet been assigned.

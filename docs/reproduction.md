@@ -17,7 +17,8 @@ EnactPhys Physics-IQ aggregates to 48.15780133372367, displayed as 48.16.
 | Generate Physics-IQ videos | `scripts/generate.py` | Base model, adapter where enabled, input images and conditions | Fixed adapter/base task manifests; GPU execution of this package pending validation |
 | Score VQA and PP from videos | `scripts/evaluate_vqa.py`, `scripts/evaluate_pp.py` | Videos, evaluator models, PP trajectories and API access | Entry points prepared; GPU/API validation pending |
 | Real parameter-control tracking and score | `scripts/track_physdelta_real.py`, `scripts/evaluate_physdelta_real_pc.py` | Generated videos, published masks and task pairs, SAM2 checkpoint | Packaged; fresh GPU validation pending |
-| Other pixel metrics | Benchmark-specific evaluator | Videos, references and evaluator dependencies | Portable Sim PC/OC and Physics-IQ/MORPHEUS execution pending |
+| Physics-IQ generation and video scoring | `scripts/reproduce_physicsiq.py` | Fixed inputs, checkpoint, base model and official reference videos/masks | 114 views per seed; see [video workflow](physicsiq_video_reproduction.md) |
+| Other pixel metrics | Benchmark-specific evaluator | Videos, references and evaluator dependencies | Portable Sim PC/OC and complete MORPHEUS execution remain separate integration work |
 
 ## Recorded measurements
 

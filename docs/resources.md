@@ -2,40 +2,19 @@
 
 | Resource | Location | Contents |
 | --- | --- | --- |
-| Code | GitHub: EnactPhys/EnactPhys | Implementation, configurations, inference, training and evaluation entry points |
-| Project page | https://enactphys.github.io/ | Selected videos and method description |
-| Model | [EnactPhys checkpoints](https://huggingface.co/EnactPhys/EnactPhys) | Checkpoints, architecture variants and loading metadata |
-| Dataset | [PhysDelta inputs](https://huggingface.co/datasets/EnactPhys/PhysDelta) | Benchmark inputs, physical conditions, masks, references and splits |
+| Code | [GitHub](https://github.com/EnactPhys/EnactPhys) | Implementations, configurations, inference, training and evaluation |
+| Website | [Project page](https://enactphys.github.io/) | Selected videos, architecture and method description |
+| Models | [EnactPhys](https://huggingface.co/EnactPhys/EnactPhys) | Eight checkpoint directories, metadata and file manifest |
+| Data | [PhysDelta](https://huggingface.co/datasets/EnactPhys/PhysDelta) | Evaluation inputs, raw training videos, physical conditions and split manifests |
 
-The model and dataset repositories share the EnactPhys account. A Hugging Face
-collection can group them on one page. Reproduction instructions and executable
-commands live in the GitHub repository.
+## Data directories
 
-## Checkpoints
+- `sim_inputs.tar.gz`, `real_inputs.tar.gz`: PhysDelta evaluation inputs.
+- `physicsiq_inputs.tar.gz`: 114 input images and 80 condition files for the fixed Physics-IQ tasks. Official reference videos and masks are downloaded from the benchmark distributor.
+- `training_raw/`: raw-video and physical-condition shards, training/validation manifests and coverage index.
+- `training_sources/`: additional original source videos and their sample mappings; consult its README for the relation to historical training copies.
+- `training/`: retained optional, partial preencoded caches. These are excluded from the default benchmark and raw-training downloads.
 
-Store architecture variants in named subdirectories of the model repository,
-with the matching model configuration. Separate repositories are optional when
-variants have different dependencies or distribution terms. Third-party base
-models are downloaded from their original publishers.
+Generated website demonstrations are selected qualitative examples. They are not a substitute for the fixed quantitative evaluation task manifests. Generating the evaluation videos uses the published prompts, inputs, seeds, checkpoint and sampling configuration.
 
-## Dataset and optional output archives
-
-Keep benchmark inputs and generated evaluation outputs in separate directories
-and identify them explicitly in the dataset card. Generated videos may be an
-optional download under `evaluation_outputs/`; a separate results repository is
-also possible if the archive becomes large. Include sample IDs, configurations
-and per-sample measurements with any released scored-video set.
-
-Training data uses separate splits or a dedicated dataset repository, depending
-on its size and license. Training samples, benchmark inputs and model-generated
-outputs have distinct manifests.
-
-## Reproduction
-
-[The reproduction guide](reproduction.md) lists the available workflows and their
-current coverage. Generate and score each model with its matching checkpoint,
-inputs and configuration. Existing scored-video archives can support direct
-re-evaluation without repeating generation.
-
-Code, model, data and evaluator revisions identify an experimental release.
-Updates to the website layout do not change those revisions.
+Reproduction commands live in the [workflow guide](reproduction.md), with dedicated [Physics-IQ](physicsiq_video_reproduction.md), [video evaluation](video_evaluation.md), and [training-data](training_data.md) instructions. Model variants use their matching architecture and checkpoint metadata. Third-party base models and evaluation models are obtained from their distributors.
