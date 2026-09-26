@@ -49,7 +49,7 @@ Download the EnactPhys adapter and PhysDelta benchmark inputs:
 
 ```bash
 hf download EnactPhys/EnactPhys --include 'enactphys/*' --local-dir weights
-hf download EnactPhys/PhysDelta --repo-type dataset --exclude 'training/*' --local-dir data/PhysDelta
+hf download EnactPhys/PhysDelta --repo-type dataset --exclude 'training/*' 'training_raw/*' 'training_sources/*' --local-dir data/PhysDelta
 tar -xzf data/PhysDelta/sim_inputs.tar.gz -C data/PhysDelta
 tar -xzf data/PhysDelta/real_inputs.tar.gz -C data/PhysDelta
 python scripts/generate_physdelta.py --dataset data/PhysDelta \
@@ -94,13 +94,23 @@ These commands compute aggregates from included measurements, evaluator means an
 
 ## Training
 
-The [training-input release](https://huggingface.co/datasets/EnactPhys/PhysDelta/tree/main/training) contains the original cached inputs, physical conditions, and train/validation manifests. Shards are uploading; the dataset's `training/index.json` records availability. Once complete:
+The [raw training-data release](https://huggingface.co/datasets/EnactPhys/PhysDelta/tree/main/training_raw) contains original located videos, physical conditions and fixed train/validation manifests. The dataset's `training_raw/index.json` records shard availability and original-video coverage. Previously uploaded encoding caches are optional and incomplete.
+
+Download, extract and check all required inputs with:
 
 ```bash
-hf download EnactPhys/PhysDelta --repo-type dataset --include 'training/*' --local-dir data/PhysDelta
-python data/PhysDelta/training/prepare_training.py --download-dir data/PhysDelta/training --output data/training
+python scripts/prepare_training_data.py --download --output data/training_raw
 ```
 
+The command stops with a coverage report if any required input is unavailable. To encode a resolved raw-data manifest on a GPU, use the released Wan preprocessing path (49 frames, 768 × 448, padding, seed 42):
+
+```bash
+python scripts/preprocess_training.py --manifest data/training_raw/train.csv \
+  --data-root data/training_raw --model-root weights/Wan2.2-TI2V-5B \
+  --output data/encoded/train --prompt-column neutral_prompt
+```
+
+`--prompt-column` is explicit: select the prompt field required by the training route. `text_prompt` contains numeric text controls; `neutral_prompt` contains scene descriptions. The encoder supports `--shard-index` and `--shard-count`; each shard must use a separate output directory. It writes a clip-to-cache index. Physical conditions remain in the raw dataset. Reencoding and historical prompt-context equivalence have not yet been validated across the complete corpus; these preparation tools do not establish an exact retraining reproduction.
 
 [configs/train_enactphys.json](configs/train_enactphys.json) specifies 16 GPUs across two nodes, batch size 2 per rank, 6,000 steps, seed 42 and validation every 1,000 steps. Set model, data, output and rendezvous paths after preparing the training caches and conditions.
 
